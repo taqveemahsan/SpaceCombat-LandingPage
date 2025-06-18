@@ -38,14 +38,13 @@ const gameScreenshots = [
 export const LandingPage = (): JSX.Element => {
   return (
     <div className="bg-black flex flex-col items-center w-full overflow-hidden min-h-screen">
-      <div className="relative w-full max-w-[1920px]">
+      <div className="relative w-full max-w-screen-2xl mx-auto">
         {/* Main Background - Group 11.png - NO SCALING */}
-        <div className="fixed inset-0 z-0">
+        <div className="fixed inset-0 z-0 flex items-center justify-center">
           <img
-            className="h-full w-full object-cover object-center"
+            className="w-full h-full object-contain"
             alt="Space combat background"
             src="/src/Images/Group 11.png"
-            style={{ objectFit: 'cover', objectPosition: 'center' }}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40"></div>
         </div>
@@ -112,11 +111,11 @@ export const LandingPage = (): JSX.Element => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4 justify-items-center">
             {gameFeatures.map((feature, index) => (
-              <div key={index} className="relative w-[351px] h-[433px] group cursor-pointer">
+              <div key={index} className="relative w-full max-w-xs aspect-[347/433] group cursor-pointer">
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20 rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl"></div>
-                
+
                 <img
-                  className="absolute w-[347px] h-[433px] top-0 left-0 rounded-lg filter drop-shadow-xl object-cover"
+                  className="absolute inset-0 w-full h-full rounded-lg filter drop-shadow-xl object-cover"
                   alt={`Feature card background ${index + 1}`}
                   src={feature.background}
                 />
@@ -149,7 +148,7 @@ export const LandingPage = (): JSX.Element => {
             {gameScreenshots.map((screenshot, index) => (
               <div key={index} className="group cursor-pointer overflow-hidden rounded-lg">
                 <img
-                  className="w-full h-[200px] md:h-[250px] lg:h-[308px] object-cover transition-all duration-500 group-hover:scale-110 filter drop-shadow-xl"
+                  className="w-full aspect-video object-cover transition-all duration-500 group-hover:scale-110 filter drop-shadow-xl"
                   alt={screenshot.alt}
                   src={screenshot.src}
                 />
@@ -169,7 +168,7 @@ export const LandingPage = (): JSX.Element => {
             Experience the thrill before you take control.
           </p>
 
-          <div className="relative mx-auto w-full max-w-[1314px] h-[300px] md:h-[500px] lg:h-[739px] group cursor-pointer overflow-hidden rounded-xl">
+          <div className="relative mx-auto w-full max-w-[1314px] aspect-video group cursor-pointer overflow-hidden rounded-xl">
             <img
               className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105 filter drop-shadow-2xl"
               alt="Game trailer thumbnail"
