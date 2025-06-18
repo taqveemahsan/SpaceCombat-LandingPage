@@ -6,22 +6,161 @@ const gameFeatures = [
   {
     title: "ADVANCED\nAI ENEMIES",
     description: "Fight intelligent foes that adapt to your playstyle.",
-    icon: "/src/Images/Icons/Frame 4.png",
+    icon: "/vector.svg",
+    background: "/group.png",
+    decorations: [
+      {
+        src: "/group-1.png",
+        className: "absolute w-[91px] h-1.5 top-[415px] left-[135px]",
+      },
+      {
+        src: "/group-2.png",
+        className: "absolute w-[91px] h-1.5 top-2.5 left-[135px]",
+      },
+      {
+        src: "/group-3.png",
+        className: "absolute w-[121px] h-[201px] top-[230px] left-[230px]",
+      },
+      {
+        src: "/group-4.png",
+        className: "absolute w-[121px] h-[201px] top-[230px] left-px",
+      },
+      {
+        src: "/group-5.png",
+        className: "absolute w-[121px] h-[201px] top-0.5 left-px",
+      },
+      {
+        src: "/group-6.png",
+        className: "absolute w-[121px] h-[201px] top-0.5 left-[230px]",
+      },
+    ],
   },
   {
     title: "Realistic Flight Physics",
     description: "Control your ship with inertia-based space mechanics.",
-    icon: "/src/Images/Icons/Frame 5.png",
+    icon: "/vector-8.svg",
+    background: "/group-7.png",
+    decorations: [
+      {
+        src: "/group-8.png",
+        className: "absolute w-[91px] h-1.5 top-[415px] left-[135px]",
+      },
+      {
+        src: "/group-9.png",
+        className: "absolute w-[91px] h-1.5 top-2.5 left-[135px]",
+      },
+      {
+        src: "/group-10.png",
+        className: "absolute w-[121px] h-[201px] top-[230px] left-[230px]",
+      },
+      {
+        src: "/group-11.png",
+        className: "absolute w-[121px] h-[201px] top-[230px] left-px",
+      },
+      {
+        src: "/group-12.png",
+        className: "absolute w-[121px] h-[201px] top-0.5 left-px",
+      },
+      {
+        src: "/group-13.png",
+        className: "absolute w-[121px] h-[201px] top-0.5 left-[230px]",
+      },
+    ],
   },
   {
     title: "VAST ENVIRONMENTS",
     description: "From asteroid fields to deep-space stations.",
-    icon: "/src/Images/Icons/Group 10.png",
+    iconGroup: [
+      {
+        src: "/group-21.png",
+        className: "absolute w-2 h-2 top-[39px] left-[104px]",
+      },
+      {
+        src: "/group-22.png",
+        className: "absolute w-2 h-2 top-[39px] left-[18px]",
+      },
+      { src: "/group-23.png", className: "absolute w-2 h-2 top-0 left-24" },
+      { src: "/group-24.png", className: "absolute w-2 h-2 top-0 left-[26px]" },
+      {
+        src: "/vector-2.svg",
+        className: "absolute w-[46px] h-9 top-10 left-0",
+      },
+      {
+        src: "/vector-4.svg",
+        className: "absolute w-[51px] h-16 top-3 left-[79px]",
+      },
+      {
+        src: "/vector-9.svg",
+        className: "absolute w-[83px] h-[69px] top-[7px] left-[13px]",
+      },
+      {
+        src: "/vector-3.svg",
+        className: "absolute w-[37px] h-5 top-0 left-[46px]",
+      },
+      {
+        src: "/vector-5.svg",
+        className: "absolute w-[63px] h-[19px] top-[27px] left-[33px]",
+      },
+    ],
+    background: "/group-14.png",
+    decorations: [
+      {
+        src: "/group-15.png",
+        className: "absolute w-[91px] h-1.5 top-[415px] left-[135px]",
+      },
+      {
+        src: "/group-16.png",
+        className: "absolute w-[91px] h-1.5 top-2.5 left-[135px]",
+      },
+      {
+        src: "/group-17.png",
+        className: "absolute w-[121px] h-[201px] top-[230px] left-[230px]",
+      },
+      {
+        src: "/group-18.png",
+        className: "absolute w-[121px] h-[201px] top-[230px] left-px",
+      },
+      {
+        src: "/group-19.png",
+        className: "absolute w-[121px] h-[201px] top-0.5 left-px",
+      },
+      {
+        src: "/group-20.png",
+        className: "absolute w-[121px] h-[201px] top-0.5 left-[230px]",
+      },
+    ],
   },
   {
     title: "SINGLE OR MULTIPLAYER READY",
     description: "Designed to expand into any mode.",
-    icon: "/src/Images/Icons/Group 10.png",
+    icon: "/group-2-1.png",
+    background: "/group-25.png",
+    decorations: [
+      {
+        src: "/group-26.png",
+        className: "absolute w-[91px] h-1.5 top-[415px] left-[137px]",
+      },
+      {
+        src: "/group-27.png",
+        className: "absolute w-[91px] h-1.5 top-2.5 left-[136px]",
+      },
+      {
+        src: "/group-28.png",
+        className: "absolute w-[121px] h-[201px] top-[230px] left-[232px]",
+      },
+      {
+        src: "/group-29.png",
+        className: "absolute w-[121px] h-[201px] top-[230px] left-0.5",
+      },
+      {
+        src: "/group-30.png",
+        className: "absolute w-[121px] h-[201px] top-0.5 left-0.5",
+      },
+      {
+        src: "/group-31.png",
+        className: "absolute w-[121px] h-[201px] top-0.5 left-[232px]",
+      },
+    ],
   },
 ];
 
@@ -39,12 +178,12 @@ export const LandingPage = (): JSX.Element => {
   return (
     <div className="bg-black flex flex-col items-center w-full overflow-hidden min-h-screen">
       <div className="relative w-full max-w-[1920px]">
-        {/* Background images with improved layering */}
+        {/* Main Background - Group 11.png */}
         <div className="fixed inset-0 z-0">
           <img
             className="h-full w-full object-cover opacity-90"
             alt="Space combat background"
-            src="/src/Images/Posts/Layer_1.png"
+            src="/src/Images/Group 11.png"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40"></div>
         </div>
@@ -65,30 +204,21 @@ export const LandingPage = (): JSX.Element => {
 
         {/* Hero Section with enhanced visual effects */}
         <section className="relative z-10 mt-32 px-4 md:px-8 lg:px-[155px]">
-          {/* Hero background image */}
-          <div className="absolute inset-0 z-0">
-            <img
-              className="w-full h-full object-cover opacity-60"
-              alt="Hero background"
-              src="/src/Images/Posts/Layer_2.png"
-            />
-          </div>
-
           {/* Enhanced blurred text effect */}
           <div className="absolute w-full max-w-[753px] top-[323px] left-1/2 transform -translate-x-1/2 lg:left-[155px] lg:transform-none blur-[8px] [font-family:'Audiowide',Helvetica] font-normal text-[#f8572d] text-3xl md:text-5xl lg:text-[67.1px] leading-tight opacity-60">
             UNLEASH CHAOS AMONG THE STARS
           </div>
 
-          <h1 className="relative w-full max-w-[753px] mx-auto lg:mx-0 [font-family:'Audiowide',Helvetica] font-normal text-white text-3xl md:text-5xl lg:text-[67.1px] leading-tight tracking-wide drop-shadow-2xl z-10">
+          <h1 className="relative w-full max-w-[753px] mx-auto lg:mx-0 [font-family:'Audiowide',Helvetica] font-normal text-white text-3xl md:text-5xl lg:text-[67.1px] leading-tight tracking-wide drop-shadow-2xl">
             UNLEASH CHAOS AMONG THE STARS
           </h1>
 
-          <p className="relative w-full max-w-[721px] mx-auto lg:mx-0 mt-8 [font-family:'Montserrat',Helvetica] font-normal text-white text-lg md:text-2xl lg:text-3xl leading-relaxed drop-shadow-lg z-10">
+          <p className="w-full max-w-[721px] mx-auto lg:mx-0 mt-8 [font-family:'Montserrat',Helvetica] font-normal text-white text-lg md:text-2xl lg:text-3xl leading-relaxed drop-shadow-lg">
             Master your ship. Crush enemy fleets. Become the galaxy&apos;s most
             feared pilot.
           </p>
 
-          <div className="relative flex flex-col sm:flex-row gap-4 mt-12 justify-center lg:justify-start z-10">
+          <div className="flex flex-col sm:flex-row gap-4 mt-12 justify-center lg:justify-start">
             <Button className="h-[52px] px-[42px] py-3.5 bg-gradient-to-r from-[#f8572d] to-[#e04d27] rounded-[68px] [font-family:'Audiowide',Helvetica] text-lg font-medium tracking-wide shadow-2xl hover:shadow-[#f8572d]/50 hover:scale-105 transition-all duration-300 border-2 border-[#f8572d]/30">
               Play Now
             </Button>
@@ -104,44 +234,92 @@ export const LandingPage = (): JSX.Element => {
 
         {/* Game Features Section with improved spacing and effects */}
         <section className="relative z-10 mt-[200px] md:mt-[300px] lg:mt-[400px] px-4 md:px-8 lg:px-[155px]">
-          {/* Features background */}
-          <div className="absolute inset-0 z-0">
-            <img
-              className="w-full h-full object-cover opacity-40"
-              alt="Features background"
-              src="/src/Images/Posts/Layer_3.png"
-            />
-          </div>
-
-          <h2 className="relative text-center [font-family:'Audiowide',Helvetica] font-normal text-white text-3xl md:text-5xl lg:text-[67.1px] mb-8 tracking-wide drop-shadow-2xl z-10">
+          <h2 className="text-center [font-family:'Audiowide',Helvetica] font-normal text-white text-3xl md:text-5xl lg:text-[67.1px] mb-8 tracking-wide drop-shadow-2xl">
             GAME FEATURES
           </h2>
 
-          <p className="relative w-full max-w-[1037px] mx-auto text-center [font-family:'Montserrat',Helvetica] font-normal text-white text-lg md:text-2xl lg:text-3xl mb-16 leading-relaxed drop-shadow-lg z-10">
+          <p className="w-full max-w-[1037px] mx-auto text-center [font-family:'Montserrat',Helvetica] font-normal text-white text-lg md:text-2xl lg:text-3xl mb-16 leading-relaxed drop-shadow-lg">
             Explore a high-speed space shooter packed with adrenaline, strategy,
             and chaos.
           </p>
 
-          <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4 justify-items-center z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4 justify-items-center">
             {gameFeatures.map((feature, index) => (
-              <div key={index} className="relative w-[280px] h-[350px] group cursor-pointer">
-                <div className="absolute inset-0 bg-gradient-to-b from-[#f8572d]/20 via-transparent to-black/60 rounded-lg border border-[#f8572d]/30 backdrop-blur-sm transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl group-hover:border-[#f8572d]/50"></div>
+              <div key={index} className="relative w-[351px] h-[433px] group cursor-pointer">
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20 rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl"></div>
                 
-                <div className="relative p-6 h-full flex flex-col items-center justify-center text-center">
+                <img
+                  className="absolute w-[347px] h-[433px] top-0 left-0 rounded-lg filter drop-shadow-xl"
+                  alt={`Feature card background ${index + 1}`}
+                  src={feature.background}
+                />
+
+                {feature.decorations.map((decoration, i) => (
                   <img
-                    className="w-16 h-16 mb-6 filter drop-shadow-lg transition-all duration-300 group-hover:scale-110"
+                    key={i}
+                    className={`${decoration.className} filter drop-shadow-md`}
+                    alt={`Decoration ${i + 1}`}
+                    src={decoration.src}
+                  />
+                ))}
+
+                {feature.icon && (
+                  <img
+                    className={`${
+                      index === 0
+                        ? "absolute w-[149px] h-[149px] top-[54px] left-[98px]"
+                        : index === 1
+                          ? "absolute w-[116px] h-[133px] top-[62px] left-[116px]"
+                          : "absolute w-[142px] h-[130px] top-[62px] left-[106px]"
+                    } filter drop-shadow-lg transition-all duration-300 group-hover:scale-110`}
                     alt={`Feature icon ${index + 1}`}
                     src={feature.icon}
                   />
+                )}
 
-                  <h3 className="[font-family:'Audiowide',Helvetica] font-normal text-white text-lg md:text-xl mb-4 tracking-wide drop-shadow-lg whitespace-pre-line">
-                    {feature.title}
-                  </h3>
+                {feature.iconGroup && (
+                  <div className="absolute w-[130px] h-[130px] top-[62px] left-[111px] transition-all duration-300 group-hover:scale-110">
+                    {feature.iconGroup.map((icon, i) => (
+                      <img
+                        key={i}
+                        className={`${icon.className} filter drop-shadow-md`}
+                        alt={`Icon part ${i + 1}`}
+                        src={icon.src}
+                      />
+                    ))}
+                  </div>
+                )}
 
-                  <p className="[font-family:'Montserrat',Helvetica] font-normal text-white/90 text-sm leading-relaxed drop-shadow-md">
-                    {feature.description}
-                  </p>
-                </div>
+                <h3
+                  className={`absolute ${
+                    index === 0
+                      ? "top-[226px] left-[74px] text-center"
+                      : index === 1
+                        ? "w-[293px] top-[226px] left-[29px] text-center"
+                        : index === 2
+                          ? "w-[317px] top-[226px] left-[15px] text-center"
+                          : "w-[351px] top-[221px] left-0 text-center"
+                  } 
+                              [font-family:'Audiowide',Helvetica] font-normal text-white text-[24px] md:text-[28px] lg:text-[30.7px] tracking-wide drop-shadow-lg whitespace-pre-line`}
+                >
+                  {feature.title}
+                </h3>
+
+                <p
+                  className={`absolute ${index === 3 ? "w-[247px] top-[343px]" : "w-[247px] top-80"} 
+                              ${
+                                index === 0
+                                  ? "left-[52px]"
+                                  : index === 1
+                                    ? "left-[38px] w-[274px]"
+                                    : index === 2
+                                      ? "left-[49px]"
+                                      : "left-[52px]"
+                              } 
+                              [font-family:'Montserrat',Helvetica] font-normal text-white text-lg text-center leading-relaxed drop-shadow-md`}
+                >
+                  {feature.description}
+                </p>
               </div>
             ))}
           </div>
@@ -149,26 +327,17 @@ export const LandingPage = (): JSX.Element => {
 
         {/* In-Game Experience Section with improved grid */}
         <section className="relative z-10 mt-[200px] md:mt-[300px] lg:mt-[400px] px-4 md:px-8 lg:px-[155px]">
-          {/* Experience background */}
-          <div className="absolute inset-0 z-0">
-            <img
-              className="w-full h-full object-cover opacity-30"
-              alt="Experience background"
-              src="/src/Images/Posts/Layer_4.png"
-            />
-          </div>
-
-          <h2 className="relative text-center [font-family:'Audiowide',Helvetica] font-normal text-white text-3xl md:text-5xl lg:text-[67.1px] mb-8 tracking-wide drop-shadow-2xl z-10">
+          <h2 className="text-center [font-family:'Audiowide',Helvetica] font-normal text-white text-3xl md:text-5xl lg:text-[67.1px] mb-8 tracking-wide drop-shadow-2xl">
             IN-GAME EXPERIENCE
           </h2>
 
-          <p className="relative w-full max-w-[1037px] mx-auto text-center [font-family:'Montserrat',Helvetica] font-normal text-white text-lg md:text-2xl lg:text-3xl mb-16 leading-relaxed drop-shadow-lg z-10">
+          <p className="w-full max-w-[1037px] mx-auto text-center [font-family:'Montserrat',Helvetica] font-normal text-white text-lg md:text-2xl lg:text-3xl mb-16 leading-relaxed drop-shadow-lg">
             Witness the combat, chaos, and cosmic beauty from the cockpit.
           </p>
 
-          <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {gameScreenshots.map((screenshot, index) => (
-              <div key={index} className="group cursor-pointer overflow-hidden rounded-lg border border-[#f8572d]/20 backdrop-blur-sm">
+              <div key={index} className="group cursor-pointer overflow-hidden rounded-lg">
                 <img
                   className="w-full h-[200px] md:h-[250px] lg:h-[308px] object-cover transition-all duration-500 group-hover:scale-110 filter drop-shadow-xl"
                   alt={screenshot.alt}
@@ -198,9 +367,7 @@ export const LandingPage = (): JSX.Element => {
             />
             <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all duration-300"></div>
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 group-hover:scale-110">
-              <div className="w-32 h-32 md:w-40 md:h-40 bg-[#f8572d] rounded-full flex items-center justify-center shadow-2xl">
-                <div className="w-0 h-0 border-l-[20px] border-l-white border-t-[12px] border-t-transparent border-b-[12px] border-b-transparent ml-2"></div>
-              </div>
+              <img className="w-32 h-32 md:w-40 md:h-40 filter drop-shadow-2xl" alt="Play button" src="/frame-1.svg" />
             </div>
           </div>
         </section>
@@ -218,7 +385,11 @@ export const LandingPage = (): JSX.Element => {
 
           <div className="flex flex-col sm:flex-row justify-center gap-6">
             <Button className="h-[52px] px-[57px] py-3.5 bg-gradient-to-r from-[#f8572d] to-[#e04d27] rounded-[68px] [font-family:'Audiowide',Helvetica] text-lg font-medium tracking-wide shadow-2xl hover:shadow-[#f8572d]/50 hover:scale-105 transition-all duration-300 flex items-center gap-[21px] border-2 border-[#f8572d]/30">
-              <div className="w-0 h-0 border-l-[16px] border-l-white border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent"></div>
+              <img
+                className="w-[33.01px] h-[21.7px] filter drop-shadow-md"
+                alt="Play icon"
+                src="/vector-1.svg"
+              />
               Play Now
             </Button>
 
@@ -234,12 +405,6 @@ export const LandingPage = (): JSX.Element => {
               Download
             </Button>
           </div>
-
-          <img
-            className="absolute w-[400px] md:w-[600px] lg:w-[689px] h-auto top-[200px] md:top-[300px] lg:top-[200px] right-0 opacity-80 filter drop-shadow-2xl"
-            alt="Spaceship element"
-            src="/src/Images/Group 11.png"
-          />
         </section>
 
         {/* Footer with enhanced styling */}
@@ -258,7 +423,11 @@ export const LandingPage = (): JSX.Element => {
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Button className="h-[35px] px-[38px] py-2.5 bg-gradient-to-r from-[#f8572d] to-[#e04d27] rounded-[45.15px] [font-family:'Audiowide',Helvetica] text-xs font-medium tracking-wide shadow-lg hover:shadow-[#f8572d]/50 hover:scale-105 transition-all duration-300 flex items-center gap-[9px]">
-                <div className="w-0 h-0 border-l-[12px] border-l-white border-t-[7px] border-t-transparent border-b-[7px] border-b-transparent"></div>
+                <img
+                  className="w-[22px] h-3.5 filter drop-shadow-sm"
+                  alt="Play icon"
+                  src="/vector-1.svg"
+                />
                 Play Now
               </Button>
 
