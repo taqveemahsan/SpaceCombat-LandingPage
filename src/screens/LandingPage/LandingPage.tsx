@@ -71,7 +71,7 @@ export const LandingPage = (): JSX.Element => {
       <div className="fixed inset-0 -z-10">
         <img
           className="w-full h-full object-contain object-top"
-          alt="Space combat background"
+          alt="Space combat hero background"
           src={heroBackground}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40"></div>
@@ -82,7 +82,7 @@ export const LandingPage = (): JSX.Element => {
         <header className="relative z-10 flex justify-center pt-8 pb-4">
           <div className="flex items-center group cursor-pointer transition-all duration-300 hover:scale-105">
             <img
-              src={logoImage}
+              alt="Galaxion Logo"
                 // src={playIcon}
               // src="/src/Images/Logo/Group 1.png"
             />
@@ -232,7 +232,7 @@ export const LandingPage = (): JSX.Element => {
               className="h-[52px] px-[51px] py-[13px] bg-white/95 backdrop-blur-sm rounded-[68px] [font-family:'Audiowide',Helvetica] text-[#f9582d] text-lg font-medium tracking-wide hover:bg-white hover:scale-105 transition-all duration-300 flex items-center gap-[21px] shadow-xl"
             >
               <img
-                className="w-6 h-6"
+                alt="Galaxion Logo"
                 alt="Download icon"
                 src={downloadLogo}
               />
