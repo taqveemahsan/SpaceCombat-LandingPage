@@ -199,7 +199,7 @@ export const LandingPage = (): JSX.Element => {
           <div className="flex flex-col items-center lg:flex-row lg:items-start lg:justify-between">
             <div className="flex-1">
               <h2 className="text-center [font-family:'Audiowide',Helvetica] font-normal text-white text-3xl md:text-5xl lg:text-[67.1px] mb-8 tracking-wide drop-shadow-2xl">
-                JOIN THE BATTLE
+                READY TO TAKE THE FLIGHT?
               </h2>
 
               <p className="w-full max-w-[1037px] mx-auto text-center [font-family:'Montserrat',Helvetica] font-normal text-white text-lg md:text-2xl lg:text-3xl mb-16 leading-relaxed drop-shadow-lg">
@@ -209,11 +209,6 @@ export const LandingPage = (): JSX.Element => {
 
               <div className="flex flex-col sm:flex-row justify-center gap-6">
                 <Button className="h-[52px] px-[57px] py-3.5 bg-gradient-to-r from-[#f8572d] to-[#e04d27] rounded-[68px] [font-family:'Audiowide',Helvetica] text-lg font-medium tracking-wide shadow-2xl hover:shadow-[#f8572d]/50 hover:scale-105 transition-all duration-300 flex items-center gap-[21px] border-2 border-[#f8572d]/30">
-                  <img
-                    className="w-[33.01px] h-[21.7px] filter drop-shadow-md"
-                    alt="Play icon"
-                    src={playIcon}
-                  />
                   Play Now
                 </Button>
 
@@ -221,7 +216,6 @@ export const LandingPage = (): JSX.Element => {
                   variant="outline"
                   className="h-[52px] px-[51px] py-[13px] bg-white/95 backdrop-blur-sm rounded-[68px] [font-family:'Audiowide',Helvetica] text-[#f9582d] text-lg font-medium tracking-wide hover:bg-white hover:scale-105 transition-all duration-300 flex items-center gap-[21px] shadow-xl"
                 >
-                  <img className="w-6 h-6" alt="Download icon" src={downloadLogo} />
                   Download
                 </Button>
               </div>
