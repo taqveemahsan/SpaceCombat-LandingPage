@@ -1,4 +1,7 @@
 import React from "react";
+
+// Resolve background image path so it works in both dev and production
+const heroBackground = new URL("../../Images/Group 11.png", import.meta.url).href;
 import { Button } from "../../components/ui/button";
 
 // Game feature card images with text baked in
@@ -27,7 +30,7 @@ export const LandingPage = (): JSX.Element => {
         <img
           className="w-full h-full object-cover object-top"
           alt="Space combat background"
-          src="/src/Images/Group 11.png"
+          src={heroBackground}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40"></div>
       </div>
