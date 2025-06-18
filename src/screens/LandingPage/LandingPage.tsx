@@ -58,7 +58,7 @@ const gameScreenshots = [
 
 export const LandingPage = (): JSX.Element => {
   return (
-    <div className="relative bg-black flex flex-col items-center w-full overflow-hidden min-h-screen">
+    <div className="relative flex flex-col items-center w-full overflow-hidden min-h-screen">
       {/* Fixed hero background */}
       <div className="fixed inset-0 -z-10">
         <img
