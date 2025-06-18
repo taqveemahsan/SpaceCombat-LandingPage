@@ -64,13 +64,15 @@ export const LandingPage = (): JSX.Element => {
         </header>
 
         {/* Hero Section with enhanced visual effects */}
-        <section className="relative z-10 mt-32 px-4 md:px-8 lg:px-[155px]">
-          {/* Enhanced blurred text effect */}
-          <div className="absolute w-full max-w-[753px] top-[323px] left-1/2 transform -translate-x-1/2 lg:left-[155px] lg:transform-none blur-[8px] [font-family:'Audiowide',Helvetica] font-normal text-[#f8572d] text-3xl md:text-5xl lg:text-[67.1px] leading-tight opacity-60">
-            UNLEASH CHAOS AMONG THE STARS
+        <section className="relative z-10 mt-32 px-4 md:px-8 lg:px-[155px] text-center lg:text-left">
+          {/* Blurred duplicate text behind the main heading */}
+          <div className="pointer-events-none absolute inset-0 flex items-center justify-center lg:justify-start">
+            <h1 className="max-w-[753px] blur-[8px] [font-family:'Audiowide',Helvetica] text-[#f8572d] text-3xl md:text-5xl lg:text-[67.1px] leading-tight opacity-60">
+              UNLEASH CHAOS AMONG THE STARS
+            </h1>
           </div>
 
-          <h1 className="relative w-full max-w-[753px] mx-auto lg:mx-0 [font-family:'Audiowide',Helvetica] font-normal text-white text-3xl md:text-5xl lg:text-[67.1px] leading-tight tracking-wide drop-shadow-2xl">
+          <h1 className="relative max-w-[753px] mx-auto lg:mx-0 [font-family:'Audiowide',Helvetica] font-normal text-white text-3xl md:text-5xl lg:text-[67.1px] leading-tight tracking-wide drop-shadow-2xl">
             UNLEASH CHAOS AMONG THE STARS
           </h1>
 
@@ -111,24 +113,26 @@ export const LandingPage = (): JSX.Element => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4 justify-items-center">
             {gameFeatures.map((feature, index) => (
-              <div key={index} className="relative w-full max-w-xs aspect-[347/433] group cursor-pointer">
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20 rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl"></div>
-
+              <div
+                key={index}
+                className="relative w-full max-w-xs aspect-[347/433] group cursor-pointer overflow-hidden rounded-lg"
+              >
                 <img
-                  className="absolute inset-0 w-full h-full rounded-lg filter drop-shadow-xl object-cover"
+                  className="absolute inset-0 w-full h-full object-cover rounded-lg filter drop-shadow-xl"
                   alt={`Feature card background ${index + 1}`}
                   src={feature.background}
                 />
 
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-lg"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
-                <h3 className="absolute w-full top-[280px] left-0 text-center [font-family:'Audiowide',Helvetica] font-normal text-white text-[24px] md:text-[28px] lg:text-[30.7px] tracking-wide drop-shadow-lg whitespace-pre-line px-4">
-                  {feature.title}
-                </h3>
-
-                <p className="absolute w-full top-[340px] left-0 [font-family:'Montserrat',Helvetica] font-normal text-white text-lg text-center leading-relaxed drop-shadow-md px-4">
-                  {feature.description}
-                </p>
+                <div className="relative z-10 flex flex-col justify-end h-full p-4">
+                  <h3 className="[font-family:'Audiowide',Helvetica] text-white text-[24px] md:text-[28px] lg:text-[30.7px] tracking-wide drop-shadow-lg whitespace-pre-line text-center">
+                    {feature.title}
+                  </h3>
+                  <p className="mt-2 [font-family:'Montserrat',Helvetica] text-white text-lg text-center leading-relaxed drop-shadow-md">
+                    {feature.description}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
