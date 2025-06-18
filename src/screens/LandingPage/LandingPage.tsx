@@ -108,14 +108,14 @@ export const LandingPage = (): JSX.Element => {
               <img
                 className="w-[33.01px] h-[21.7px] filter drop-shadow-md"
                 alt="Play icon"
-                src="/src/Images/Icons/Frame 4.png"
-              />
-              Play Now
-            </Button>
+        <section className="relative z-10 mt-20 md:mt-32 lg:mt-48 px-4 md:px-8 lg:px-[155px]">
+        <section className="relative z-10 mt-20 md:mt-32 lg:mt-48 px-4 md:px-8 lg:px-[155px]">
+        <section className="relative z-10 mt-20 md:mt-32 lg:mt-48 px-4 md:px-8 lg:px-[155px]">
+        <section className="relative z-10 mt-20 md:mt-32 lg:mt-48 px-4 md:px-8 lg:px-[155px]">
 
             <Button
               variant="outline"
-              className="h-[52px] px-[23px] py-3.5 rounded-[68px] border-2 border-[#f8572d] bg-transparent backdrop-blur-sm [font-family:'Audiowide',Helvetica] text-[#f8572d] text-lg font-medium tracking-wide hover:bg-[#f8572d]/20 hover:scale-105 transition-all duration-300 shadow-lg"
+        <footer className="relative z-10 mt-20 md:mt-32 lg:mt-48">
             >
               Watch Trailer
             </Button>
