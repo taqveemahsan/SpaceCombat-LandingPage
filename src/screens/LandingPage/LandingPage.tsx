@@ -62,7 +62,7 @@ export const LandingPage = (): JSX.Element => {
       {/* Fixed hero background */}
       <div className="fixed inset-0 -z-10">
         <img
-          className="w-full h-full object-cover object-top"
+          className="w-full h-full object-contain object-top"
           alt="Space combat background"
           src={heroBackground}
         />
