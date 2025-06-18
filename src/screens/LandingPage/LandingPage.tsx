@@ -24,7 +24,7 @@ export const LandingPage = (): JSX.Element => {
     <div className="bg-black flex flex-col items-center w-full overflow-hidden min-h-screen">
       <div className="relative w-full max-w-screen-2xl mx-auto">
         {/* Main Background - Group 11.png - NO SCALING */}
-        <div className="fixed inset-0 z-0">
+        <div className="absolute inset-0 -z-10">
           <img
             className="w-full h-full object-cover object-top"
             alt="Space combat background"
