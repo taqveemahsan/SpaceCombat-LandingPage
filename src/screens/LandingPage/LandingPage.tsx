@@ -41,13 +41,13 @@ export const LandingPage = (): JSX.Element => {
         <header className="relative z-10 flex justify-center pt-8 pb-4">
           <div className="flex items-center group cursor-pointer transition-all duration-300 hover:scale-105">
             <img
-              className="w-[35px] h-[45px] filter drop-shadow-lg"
+              className="h-[45px] filter drop-shadow-lg"
               alt="Galaxion logo"
               src="/src/Images/Logo/Group 1.png"
             />
-            <span className="ml-3 [font-family:'Audiowide',Helvetica] font-normal text-white text-[26.1px] tracking-wider drop-shadow-lg">
+            {/* <span className="ml-3 [font-family:'Audiowide',Helvetica] font-normal text-white text-[26.1px] tracking-wider drop-shadow-lg">
               Galaxion
-            </span>
+            </span> */}
           </div>
         </header>
 
@@ -206,13 +206,13 @@ export const LandingPage = (): JSX.Element => {
           <div className="w-full h-auto min-h-[290px] bg-gradient-to-b from-[#222222] via-[#111111] to-black flex flex-col items-center justify-center py-12 px-4">
             <div className="flex items-center mb-8 group cursor-pointer transition-all duration-300 hover:scale-105">
               <img
-                className="w-[63px] h-[81px] filter drop-shadow-lg"
+                className="h-[75px] filter drop-shadow-lg"
                 alt="Galaxion logo"
                 src="/src/Images/Logo/Group 1.png"
               />
-              <span className="ml-4 [font-family:'Audiowide',Helvetica] font-normal text-white text-[32px] md:text-[46.4px] tracking-wider drop-shadow-lg">
+              {/* <span className="ml-4 [font-family:'Audiowide',Helvetica] font-normal text-white text-[32px] md:text-[46.4px] tracking-wider drop-shadow-lg">
                 Galaxion
-              </span>
+              </span> */}
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
