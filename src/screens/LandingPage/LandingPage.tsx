@@ -21,17 +21,18 @@ const gameScreenshots = [
 
 export const LandingPage = (): JSX.Element => {
   return (
-    <div className="bg-black flex flex-col items-center w-full overflow-hidden min-h-screen">
+    <div className="relative bg-black flex flex-col items-center w-full overflow-hidden min-h-screen">
+      {/* Page-wide scrolling background */}
+      <div className="absolute inset-0 -z-10">
+        <img
+          className="w-full h-full object-cover object-top"
+          alt="Space combat background"
+          src="/src/Images/Group 11.png"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40"></div>
+      </div>
+
       <div className="relative w-full max-w-screen-2xl mx-auto">
-        {/* Main Background - Group 11.png - NO SCALING */}
-        <div className="absolute inset-0 -z-10">
-          <img
-            className="w-full h-full object-cover object-top"
-            alt="Space combat background"
-            src="/src/Images/Group 11.png"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40"></div>
-        </div>
 
         {/* Navigation with improved styling */}
         <header className="relative z-10 flex justify-center pt-8 pb-4">
