@@ -59,10 +59,10 @@ const gameScreenshots = [
 export const LandingPage = (): JSX.Element => {
   return (
     <div className="relative flex flex-col items-center w-full overflow-hidden min-h-screen">
-      {/* Fixed hero background */}
-      <div className="fixed inset-0 -z-10">
+      {/* Page background */}
+      <div className="absolute inset-0 -z-10 h-full">
         <img
-          className="w-full h-full object-contain object-top"
+          className="w-full h-full object-cover object-top"
           alt="Space combat background"
           src={heroBackground}
         />
@@ -78,7 +78,7 @@ export const LandingPage = (): JSX.Element => {
         </header>
 
         {/* Hero Section */}
-        <section className="relative z-10 mt-32 px-4 md:px-8 lg:px-[155px] text-center lg:text-left">
+        <section className="relative z-10 mt-16 px-4 md:px-8 lg:px-[155px] text-center lg:text-left">
           <div className="pointer-events-none absolute inset-0 flex items-center justify-center lg:justify-start">
             <h1 className="max-w-[753px] blur-[8px] [font-family:'Audiowide',Helvetica] text-[#f8572d] text-3xl md:text-5xl lg:text-[67.1px] leading-tight opacity-60">
               UNLEASH CHAOS AMONG THE STARS
@@ -113,7 +113,7 @@ export const LandingPage = (): JSX.Element => {
         </section>
 
         {/* Game Features Section */}
-        <section className="relative z-10 mt-[200px] md:mt-[300px] lg:mt-[400px] px-4 md:px-8 lg:px-[155px]">
+        <section className="relative z-10 mt-[100px] md:mt-[150px] lg:mt-[200px] px-4 md:px-8 lg:px-[155px]">
           <h2 className="text-center [font-family:'Audiowide',Helvetica] font-normal text-white text-3xl md:text-5xl lg:text-[67.1px] mb-8 tracking-wide drop-shadow-2xl">
             GAME FEATURES
           </h2>
@@ -139,7 +139,7 @@ export const LandingPage = (): JSX.Element => {
         </section>
 
         {/* In-Game Experience Section */}
-        <section className="relative z-10 mt-[200px] md:mt-[300px] lg:mt-[400px] px-4 md:px-8 lg:px-[155px]">
+        <section className="relative z-10 mt-[100px] md:mt-[150px] lg:mt-[200px] px-4 md:px-8 lg:px-[155px]">
           <h2 className="text-center [font-family:'Audiowide',Helvetica] font-normal text-white text-3xl md:text-5xl lg:text-[67.1px] mb-8 tracking-wide drop-shadow-2xl">
             IN-GAME EXPERIENCE
           </h2>
@@ -166,7 +166,7 @@ export const LandingPage = (): JSX.Element => {
         </section>
 
         {/* Trailer Section */}
-        <section className="relative z-10 mt-[200px] md:mt-[300px] lg:mt-[400px] px-4 md:px-8 lg:px-[155px]">
+        <section className="relative z-10 mt-[100px] md:mt-[150px] lg:mt-[200px] px-4 md:px-8 lg:px-[155px]">
           <h2 className="text-center [font-family:'Audiowide',Helvetica] font-normal text-white text-3xl md:text-5xl lg:text-[67.1px] mb-8 tracking-wide drop-shadow-2xl">
             WATCH THE TRAILER
           </h2>
@@ -193,7 +193,7 @@ export const LandingPage = (): JSX.Element => {
         </section>
 
         {/* Call to Action Section */}
-        <section className="relative z-10 mt-[200px] md:mt-[300px] lg:mt-[400px] px-4 md:px-8 lg:px-[155px]">
+        <section className="relative z-10 mt-[100px] md:mt-[150px] lg:mt-[200px] px-4 md:px-8 lg:px-[155px]">
           <h2 className="text-center [font-family:'Audiowide',Helvetica] font-normal text-white text-3xl md:text-5xl lg:text-[67.1px] mb-8 tracking-wide drop-shadow-2xl">
             JOIN THE BATTLE
           </h2>
@@ -224,7 +224,7 @@ export const LandingPage = (): JSX.Element => {
         </section>
 
         {/* Footer */}
-        <footer className="relative z-10 mt-[200px] md:mt-[300px] lg:mt-[400px]">
+        <footer className="relative z-10 mt-[100px] md:mt-[150px] lg:mt-[200px]">
           <div className="w-full h-auto min-h-[290px] bg-gradient-to-b from-[#222222] via-[#111111] to-black flex flex-col items-center justify-center py-12 px-4">
             <div className="flex items-center mb-8 group cursor-pointer transition-all duration-300 hover:scale-105">
               <img src={logoImage} alt="Galaxion logo" />
