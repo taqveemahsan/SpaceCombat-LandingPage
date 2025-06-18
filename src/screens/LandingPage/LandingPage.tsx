@@ -1,11 +1,19 @@
 import React from "react";
 
-const heroBackground = new URL("../../Images/Group 11.png", import.meta.url).href;
-const logoImage = new URL("../../Images/Logo/Group 1.png", import.meta.url).href;
-const downloadLogo = new URL("../../Images/Logo/Group 9.png", import.meta.url).href;
-const playIcon = new URL("../../Images/Icons/Frame 4.png", import.meta.url).href;
-const playButton = new URL("../../Images/Icons/Frame 5.png", import.meta.url).href;
-const trailerThumbnail = new URL("../../Images/Posts/image.png", import.meta.url).href;
+const heroBackground = new URL("../../Images/Group 11.png", import.meta.url)
+  .href;
+const logoImage = new URL("../../Images/Logo/Group 1.png", import.meta.url)
+  .href;
+const downloadLogo = new URL("../../Images/Logo/Group 9.png", import.meta.url)
+  .href;
+const playIcon = new URL("../../Images/Icons/Frame 4.png", import.meta.url)
+  .href;
+const playButton = new URL("../../Images/Icons/Frame 5.png", import.meta.url)
+  .href;
+const trailerThumbnail = new URL(
+  "../../Images/Posts/image.png",
+  import.meta.url,
+).href;
 import { Button } from "../../components/ui/button";
 
 // Game feature card images with text baked in
@@ -70,7 +78,6 @@ export const LandingPage = (): JSX.Element => {
       </div>
 
       <div className="relative w-full max-w-screen-2xl mx-auto">
-
         {/* Navigation with improved styling */}
         <header className="relative z-10 flex justify-center pt-8 pb-4">
           <div className="flex items-center group cursor-pointer transition-all duration-300 hover:scale-105">
@@ -150,7 +157,10 @@ export const LandingPage = (): JSX.Element => {
         </section>
 
         {/* In-Game Experience Section with improved grid */}
-        <section className="relative z-10 mt-[200px] md:mt-[300px] lg:mt-[400px] px-4 md:px-8 lg:px-[155px]">
+              <div
+                key={index}
+                className="group cursor-pointer overflow-hidden rounded-lg"
+              >
           <h2 className="text-center [font-family:'Audiowide',Helvetica] font-normal text-white text-3xl md:text-5xl lg:text-[67.1px] mb-8 tracking-wide drop-shadow-2xl">
             IN-GAME EXPERIENCE
           </h2>
@@ -201,11 +211,7 @@ export const LandingPage = (): JSX.Element => {
         </section>
 
         {/* Call to Action Section with improved buttons */}
-        <section className="relative z-10 mt-[200px] md:mt-[300px] lg:mt-[400px] px-4 md:px-8 lg:px-[155px]">
-          <h2 className="text-center [font-family:'Audiowide',Helvetica] font-normal text-white text-3xl md:text-5xl lg:text-[67.1px] mb-8 tracking-wide drop-shadow-2xl">
-            READY TO TAKE FLIGHT?
-          </h2>
-
+              <img className="w-6 h-6" alt="Download icon" src={downloadLogo} />
           <p className="w-full max-w-[1037px] mx-auto text-center [font-family:'Montserrat',Helvetica] font-normal text-white text-lg md:text-2xl lg:text-3xl mb-16 leading-relaxed drop-shadow-lg">
             Available on Web, PC, and more.
             <br /> Join now and lead your fleet to victory.
