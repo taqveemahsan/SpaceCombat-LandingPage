@@ -224,7 +224,7 @@ export const LandingPage = (): JSX.Element => {
         </section>
 
         {/* Footer */}
-        <footer className="relative z-10 mt-[100px] md:mt-[150px] lg:mt-[200px]">
+        <footer className="relative z-10 w-full mt-[100px] md:mt-[150px] lg:mt-[200px]">
           <div className="w-full h-auto min-h-[290px] bg-gradient-to-b from-[#222222] via-[#111111] to-black flex flex-col items-center justify-center py-12 px-4">
             <div className="flex items-center mb-8 group cursor-pointer transition-all duration-300 hover:scale-105">
               <img src={logoImage} alt="Galaxion logo" />
