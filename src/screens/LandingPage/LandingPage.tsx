@@ -1,7 +1,7 @@
 import React from "react";
 
-// Resolve background image path so it works in both dev and production
-const heroBackground = new URL("../../Images/Group 11.png", import.meta.url).href;
+// Hero background image path
+const heroBackground = "/src/Images/Group 11.png";
 import { Button } from "../../components/ui/button";
 
 // Game feature card images with text baked in
