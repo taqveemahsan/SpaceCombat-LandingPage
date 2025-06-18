@@ -1,166 +1,27 @@
 import React from "react";
 import { Button } from "../../components/ui/button";
 
-// Game feature data for mapping
+// Game feature data for mapping - Updated with layer images
 const gameFeatures = [
   {
     title: "ADVANCED\nAI ENEMIES",
     description: "Fight intelligent foes that adapt to your playstyle.",
-    icon: "/vector.svg",
-    background: "/group.png",
-    decorations: [
-      {
-        src: "/group-1.png",
-        className: "absolute w-[91px] h-1.5 top-[415px] left-[135px]",
-      },
-      {
-        src: "/group-2.png",
-        className: "absolute w-[91px] h-1.5 top-2.5 left-[135px]",
-      },
-      {
-        src: "/group-3.png",
-        className: "absolute w-[121px] h-[201px] top-[230px] left-[230px]",
-      },
-      {
-        src: "/group-4.png",
-        className: "absolute w-[121px] h-[201px] top-[230px] left-px",
-      },
-      {
-        src: "/group-5.png",
-        className: "absolute w-[121px] h-[201px] top-0.5 left-px",
-      },
-      {
-        src: "/group-6.png",
-        className: "absolute w-[121px] h-[201px] top-0.5 left-[230px]",
-      },
-    ],
+    background: "/src/Images/Posts/Layer_1.png",
   },
   {
     title: "Realistic Flight Physics",
     description: "Control your ship with inertia-based space mechanics.",
-    icon: "/vector-8.svg",
-    background: "/group-7.png",
-    decorations: [
-      {
-        src: "/group-8.png",
-        className: "absolute w-[91px] h-1.5 top-[415px] left-[135px]",
-      },
-      {
-        src: "/group-9.png",
-        className: "absolute w-[91px] h-1.5 top-2.5 left-[135px]",
-      },
-      {
-        src: "/group-10.png",
-        className: "absolute w-[121px] h-[201px] top-[230px] left-[230px]",
-      },
-      {
-        src: "/group-11.png",
-        className: "absolute w-[121px] h-[201px] top-[230px] left-px",
-      },
-      {
-        src: "/group-12.png",
-        className: "absolute w-[121px] h-[201px] top-0.5 left-px",
-      },
-      {
-        src: "/group-13.png",
-        className: "absolute w-[121px] h-[201px] top-0.5 left-[230px]",
-      },
-    ],
+    background: "/src/Images/Posts/Layer_2.png",
   },
   {
     title: "VAST ENVIRONMENTS",
     description: "From asteroid fields to deep-space stations.",
-    iconGroup: [
-      {
-        src: "/group-21.png",
-        className: "absolute w-2 h-2 top-[39px] left-[104px]",
-      },
-      {
-        src: "/group-22.png",
-        className: "absolute w-2 h-2 top-[39px] left-[18px]",
-      },
-      { src: "/group-23.png", className: "absolute w-2 h-2 top-0 left-24" },
-      { src: "/group-24.png", className: "absolute w-2 h-2 top-0 left-[26px]" },
-      {
-        src: "/vector-2.svg",
-        className: "absolute w-[46px] h-9 top-10 left-0",
-      },
-      {
-        src: "/vector-4.svg",
-        className: "absolute w-[51px] h-16 top-3 left-[79px]",
-      },
-      {
-        src: "/vector-9.svg",
-        className: "absolute w-[83px] h-[69px] top-[7px] left-[13px]",
-      },
-      {
-        src: "/vector-3.svg",
-        className: "absolute w-[37px] h-5 top-0 left-[46px]",
-      },
-      {
-        src: "/vector-5.svg",
-        className: "absolute w-[63px] h-[19px] top-[27px] left-[33px]",
-      },
-    ],
-    background: "/group-14.png",
-    decorations: [
-      {
-        src: "/group-15.png",
-        className: "absolute w-[91px] h-1.5 top-[415px] left-[135px]",
-      },
-      {
-        src: "/group-16.png",
-        className: "absolute w-[91px] h-1.5 top-2.5 left-[135px]",
-      },
-      {
-        src: "/group-17.png",
-        className: "absolute w-[121px] h-[201px] top-[230px] left-[230px]",
-      },
-      {
-        src: "/group-18.png",
-        className: "absolute w-[121px] h-[201px] top-[230px] left-px",
-      },
-      {
-        src: "/group-19.png",
-        className: "absolute w-[121px] h-[201px] top-0.5 left-px",
-      },
-      {
-        src: "/group-20.png",
-        className: "absolute w-[121px] h-[201px] top-0.5 left-[230px]",
-      },
-    ],
+    background: "/src/Images/Posts/Layer_3.png",
   },
   {
     title: "SINGLE OR MULTIPLAYER READY",
     description: "Designed to expand into any mode.",
-    icon: "/group-2-1.png",
-    background: "/group-25.png",
-    decorations: [
-      {
-        src: "/group-26.png",
-        className: "absolute w-[91px] h-1.5 top-[415px] left-[137px]",
-      },
-      {
-        src: "/group-27.png",
-        className: "absolute w-[91px] h-1.5 top-2.5 left-[136px]",
-      },
-      {
-        src: "/group-28.png",
-        className: "absolute w-[121px] h-[201px] top-[230px] left-[232px]",
-      },
-      {
-        src: "/group-29.png",
-        className: "absolute w-[121px] h-[201px] top-[230px] left-0.5",
-      },
-      {
-        src: "/group-30.png",
-        className: "absolute w-[121px] h-[201px] top-0.5 left-0.5",
-      },
-      {
-        src: "/group-31.png",
-        className: "absolute w-[121px] h-[201px] top-0.5 left-[232px]",
-      },
-    ],
+    background: "/src/Images/Posts/Layer_4.png",
   },
 ];
 
@@ -178,12 +39,13 @@ export const LandingPage = (): JSX.Element => {
   return (
     <div className="bg-black flex flex-col items-center w-full overflow-hidden min-h-screen">
       <div className="relative w-full max-w-[1920px]">
-        {/* Main Background - Group 11.png */}
+        {/* Main Background - Group 11.png - NO SCALING */}
         <div className="fixed inset-0 z-0">
           <img
-            className="h-full w-full object-cover opacity-90"
+            className="h-full w-full object-cover object-center"
             alt="Space combat background"
             src="/src/Images/Group 11.png"
+            style={{ objectFit: 'cover', objectPosition: 'center' }}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40"></div>
         </div>
@@ -219,7 +81,12 @@ export const LandingPage = (): JSX.Element => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-12 justify-center lg:justify-start">
-            <Button className="h-[52px] px-[42px] py-3.5 bg-gradient-to-r from-[#f8572d] to-[#e04d27] rounded-[68px] [font-family:'Audiowide',Helvetica] text-lg font-medium tracking-wide shadow-2xl hover:shadow-[#f8572d]/50 hover:scale-105 transition-all duration-300 border-2 border-[#f8572d]/30">
+            <Button className="h-[52px] px-[42px] py-3.5 bg-gradient-to-r from-[#f8572d] to-[#e04d27] rounded-[68px] [font-family:'Audiowide',Helvetica] text-lg font-medium tracking-wide shadow-2xl hover:shadow-[#f8572d]/50 hover:scale-105 transition-all duration-300 border-2 border-[#f8572d]/30 flex items-center gap-3">
+              <img
+                className="w-[33.01px] h-[21.7px] filter drop-shadow-md"
+                alt="Play icon"
+                src="/src/Images/Icons/Frame 4.png"
+              />
               Play Now
             </Button>
 
@@ -232,7 +99,7 @@ export const LandingPage = (): JSX.Element => {
           </div>
         </section>
 
-        {/* Game Features Section with improved spacing and effects */}
+        {/* Game Features Section with layer images */}
         <section className="relative z-10 mt-[200px] md:mt-[300px] lg:mt-[400px] px-4 md:px-8 lg:px-[155px]">
           <h2 className="text-center [font-family:'Audiowide',Helvetica] font-normal text-white text-3xl md:text-5xl lg:text-[67.1px] mb-8 tracking-wide drop-shadow-2xl">
             GAME FEATURES
@@ -249,75 +116,18 @@ export const LandingPage = (): JSX.Element => {
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20 rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl"></div>
                 
                 <img
-                  className="absolute w-[347px] h-[433px] top-0 left-0 rounded-lg filter drop-shadow-xl"
+                  className="absolute w-[347px] h-[433px] top-0 left-0 rounded-lg filter drop-shadow-xl object-cover"
                   alt={`Feature card background ${index + 1}`}
                   src={feature.background}
                 />
 
-                {feature.decorations.map((decoration, i) => (
-                  <img
-                    key={i}
-                    className={`${decoration.className} filter drop-shadow-md`}
-                    alt={`Decoration ${i + 1}`}
-                    src={decoration.src}
-                  />
-                ))}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-lg"></div>
 
-                {feature.icon && (
-                  <img
-                    className={`${
-                      index === 0
-                        ? "absolute w-[149px] h-[149px] top-[54px] left-[98px]"
-                        : index === 1
-                          ? "absolute w-[116px] h-[133px] top-[62px] left-[116px]"
-                          : "absolute w-[142px] h-[130px] top-[62px] left-[106px]"
-                    } filter drop-shadow-lg transition-all duration-300 group-hover:scale-110`}
-                    alt={`Feature icon ${index + 1}`}
-                    src={feature.icon}
-                  />
-                )}
-
-                {feature.iconGroup && (
-                  <div className="absolute w-[130px] h-[130px] top-[62px] left-[111px] transition-all duration-300 group-hover:scale-110">
-                    {feature.iconGroup.map((icon, i) => (
-                      <img
-                        key={i}
-                        className={`${icon.className} filter drop-shadow-md`}
-                        alt={`Icon part ${i + 1}`}
-                        src={icon.src}
-                      />
-                    ))}
-                  </div>
-                )}
-
-                <h3
-                  className={`absolute ${
-                    index === 0
-                      ? "top-[226px] left-[74px] text-center"
-                      : index === 1
-                        ? "w-[293px] top-[226px] left-[29px] text-center"
-                        : index === 2
-                          ? "w-[317px] top-[226px] left-[15px] text-center"
-                          : "w-[351px] top-[221px] left-0 text-center"
-                  } 
-                              [font-family:'Audiowide',Helvetica] font-normal text-white text-[24px] md:text-[28px] lg:text-[30.7px] tracking-wide drop-shadow-lg whitespace-pre-line`}
-                >
+                <h3 className="absolute w-full top-[280px] left-0 text-center [font-family:'Audiowide',Helvetica] font-normal text-white text-[24px] md:text-[28px] lg:text-[30.7px] tracking-wide drop-shadow-lg whitespace-pre-line px-4">
                   {feature.title}
                 </h3>
 
-                <p
-                  className={`absolute ${index === 3 ? "w-[247px] top-[343px]" : "w-[247px] top-80"} 
-                              ${
-                                index === 0
-                                  ? "left-[52px]"
-                                  : index === 1
-                                    ? "left-[38px] w-[274px]"
-                                    : index === 2
-                                      ? "left-[49px]"
-                                      : "left-[52px]"
-                              } 
-                              [font-family:'Montserrat',Helvetica] font-normal text-white text-lg text-center leading-relaxed drop-shadow-md`}
-                >
+                <p className="absolute w-full top-[340px] left-0 [font-family:'Montserrat',Helvetica] font-normal text-white text-lg text-center leading-relaxed drop-shadow-md px-4">
                   {feature.description}
                 </p>
               </div>
@@ -367,7 +177,11 @@ export const LandingPage = (): JSX.Element => {
             />
             <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all duration-300"></div>
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 group-hover:scale-110">
-              <img className="w-32 h-32 md:w-40 md:h-40 filter drop-shadow-2xl" alt="Play button" src="/frame-1.svg" />
+              <img 
+                className="w-32 h-32 md:w-40 md:h-40 filter drop-shadow-2xl" 
+                alt="Play button" 
+                src="/src/Images/Icons/Frame 5.png" 
+              />
             </div>
           </div>
         </section>
@@ -388,7 +202,7 @@ export const LandingPage = (): JSX.Element => {
               <img
                 className="w-[33.01px] h-[21.7px] filter drop-shadow-md"
                 alt="Play icon"
-                src="/vector-1.svg"
+                src="/src/Images/Icons/Frame 4.png"
               />
               Play Now
             </Button>
@@ -426,7 +240,7 @@ export const LandingPage = (): JSX.Element => {
                 <img
                   className="w-[22px] h-3.5 filter drop-shadow-sm"
                   alt="Play icon"
-                  src="/vector-1.svg"
+                  src="/src/Images/Icons/Frame 4.png"
                 />
                 Play Now
               </Button>
