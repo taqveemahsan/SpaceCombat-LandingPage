@@ -198,16 +198,16 @@ export const LandingPage = (): JSX.Element => {
         <section className="relative z-10 mt-[100px] md:mt-[150px] lg:mt-[200px] px-4 md:px-8 lg:px-[155px]">
           <div className="flex flex-col items-center lg:flex-row lg:items-start lg:justify-between">
             <div className="flex-1">
-              <h2 className="text-center lg:text-left [font-family:'Audiowide',Helvetica] font-normal text-white text-3xl md:text-5xl lg:text-[67.1px] mb-8 tracking-wide drop-shadow-2xl">
+              <h2 className="text-center [font-family:'Audiowide',Helvetica] font-normal text-white text-3xl md:text-5xl lg:text-[67.1px] mb-8 tracking-wide drop-shadow-2xl">
                 JOIN THE BATTLE
               </h2>
 
-              <p className="w-full max-w-[1037px] mx-auto lg:mx-0 text-center lg:text-left [font-family:'Montserrat',Helvetica] font-normal text-white text-lg md:text-2xl lg:text-3xl mb-16 leading-relaxed drop-shadow-lg">
+              <p className="w-full max-w-[1037px] mx-auto text-center [font-family:'Montserrat',Helvetica] font-normal text-white text-lg md:text-2xl lg:text-3xl mb-16 leading-relaxed drop-shadow-lg">
                 Available on Web, PC, and more.
                 <br /> Join now and lead your fleet to victory.
               </p>
 
-              <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-6">
+              <div className="flex flex-col sm:flex-row justify-center gap-6">
                 <Button className="h-[52px] px-[57px] py-3.5 bg-gradient-to-r from-[#f8572d] to-[#e04d27] rounded-[68px] [font-family:'Audiowide',Helvetica] text-lg font-medium tracking-wide shadow-2xl hover:shadow-[#f8572d]/50 hover:scale-105 transition-all duration-300 flex items-center gap-[21px] border-2 border-[#f8572d]/30">
                   <img
                     className="w-[33.01px] h-[21.7px] filter drop-shadow-md"
@@ -230,7 +230,7 @@ export const LandingPage = (): JSX.Element => {
             <img
               src={planeImage}
               alt=""
-              className="hidden lg:block lg:w-1/3 xl:w-1/4 h-auto ml-8 mt-8 lg:mt-0"
+              className="hidden lg:block w-[860px] h-[600px] object-contain ml-auto -mr-[155px] mt-8 lg:mt-0"
             />
           </div>
         </section>
