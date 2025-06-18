@@ -4,7 +4,7 @@ const heroBackground = new URL("../../Images/Group 11.png", import.meta.url).hre
 const logoImage = new URL("../../Images/Logo/Group 1.png", import.meta.url).href;
 const downloadLogo = new URL("../../Images/Logo/Group 9.png", import.meta.url).href;
 const playIcon = new URL("../../Images/Icons/Frame 4.png", import.meta.url).href;
-const playButton = new URL("../../Images/Icons/Frame 5.png", import.meta.url).href;
+const playButton = new URL("../../Images/Icons/play.png", import.meta.url).href;
 const trailerThumbnail = new URL("../../Images/Posts/image.png", import.meta.url).href;
 const footerDivider = new URL("../../Images/Footer/Layer_1.png", import.meta.url).href;
 const planeImage = new URL("../../Images/Footer/plane.png", import.meta.url).href;
@@ -198,10 +198,10 @@ export const LandingPage = (): JSX.Element => {
         <section className="relative z-10 mt-[100px] md:mt-[150px] lg:mt-[200px] px-4 md:px-8 lg:px-[155px]">
           <div className="relative flex flex-col items-center">
           <img
-  src={planeImage}
-  alt=""
-  className="hidden lg:block absolute right-[-363px] top-1/2 -translate-y-1/2 w-[860px] h-[600px] object-contain pointer-events-none"
-/>
+            src={planeImage}
+            alt=""
+            className="hidden lg:block absolute right-[-363px] top-1/2 -translate-y-1/2 w-[860px] h-[600px] object-contain pointer-events-none"
+          />
 
             <div className="flex-1">
               <h2 className="text-center [font-family:'Audiowide',Helvetica] font-normal text-white text-3xl md:text-5xl lg:text-[67.1px] mb-8 tracking-wide drop-shadow-2xl">
