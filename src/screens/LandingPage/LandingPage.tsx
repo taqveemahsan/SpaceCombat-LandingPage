@@ -196,7 +196,12 @@ export const LandingPage = (): JSX.Element => {
 
         {/* Call to Action Section */}
         <section className="relative z-10 mt-[100px] md:mt-[150px] lg:mt-[200px] px-4 md:px-8 lg:px-[155px]">
-          <div className="flex flex-col items-center lg:flex-row lg:items-start lg:justify-between">
+          <div className="relative flex flex-col items-center">
+            <img
+              src={planeImage}
+              alt=""
+              className="hidden lg:block absolute -right-[155px] top-1/2 -translate-y-1/2 w-[860px] h-[600px] object-contain pointer-events-none"
+            />
             <div className="flex-1">
               <h2 className="text-center [font-family:'Audiowide',Helvetica] font-normal text-white text-3xl md:text-5xl lg:text-[67.1px] mb-8 tracking-wide drop-shadow-2xl">
                 READY TO TAKE THE FLIGHT?
@@ -221,11 +226,6 @@ export const LandingPage = (): JSX.Element => {
               </div>
             </div>
 
-            <img
-              src={planeImage}
-              alt=""
-              className="hidden lg:block w-[860px] h-[600px] object-contain ml-auto -mr-[155px] mt-8 lg:mt-0"
-            />
           </div>
         </section>
       </div>
