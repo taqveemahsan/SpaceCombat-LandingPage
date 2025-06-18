@@ -6,6 +6,7 @@ const downloadLogo = new URL("../../Images/Logo/Group 9.png", import.meta.url).h
 const playIcon = new URL("../../Images/Icons/Frame 4.png", import.meta.url).href;
 const playButton = new URL("../../Images/Icons/Frame 5.png", import.meta.url).href;
 const trailerThumbnail = new URL("../../Images/Posts/image.png", import.meta.url).href;
+const footerDivider = new URL("../../Footer/Layer_1.png", import.meta.url).href;
 import { Button } from "../../components/ui/button";
 
 // Game feature card images with text baked in
@@ -222,10 +223,12 @@ export const LandingPage = (): JSX.Element => {
             </Button>
           </div>
         </section>
+      </div>
 
-        {/* Footer */}
-        <footer className="relative z-10 w-full mt-[100px] md:mt-[150px] lg:mt-[200px]">
-          <div className="w-full h-auto min-h-[290px] bg-gradient-to-b from-[#222222] via-[#111111] to-black flex flex-col items-center justify-center py-12 px-4">
+      {/* Footer */}
+      <footer className="relative z-10 w-full mt-[100px] md:mt-[150px] lg:mt-[200px]">
+        <img src={footerDivider} alt="" className="w-full" />
+        <div className="w-full h-auto min-h-[290px] bg-gradient-to-b from-[#222222] via-[#111111] to-black flex flex-col items-center justify-center py-12 px-4">
             <div className="flex items-center mb-8 group cursor-pointer transition-all duration-300 hover:scale-105">
               <img src={logoImage} alt="Galaxion logo" />
             </div>
