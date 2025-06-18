@@ -95,18 +95,18 @@ export const LandingPage = (): JSX.Element => {
 
           <div className="flex flex-col sm:flex-row gap-4 mt-12 justify-center lg:justify-start">
             <Button className="h-[52px] px-[42px] py-3.5 bg-gradient-to-r from-[#f8572d] to-[#e04d27] rounded-[68px] [font-family:'Audiowide',Helvetica] text-lg font-medium tracking-wide shadow-2xl hover:shadow-[#f8572d]/50 hover:scale-105 transition-all duration-300 border-2 border-[#f8572d]/30 flex items-center gap-3">
-              <img
+              {/* <img
                 className="w-[33.01px] h-[21.7px] filter drop-shadow-md"
                 alt="Play icon"
                 src={playIcon}
-              />
+              /> */}
               Play Now
             </Button>
             <Button
               variant="outline"
               className="h-[52px] px-[42px] py-3.5 bg-white/95 backdrop-blur-sm rounded-[68px] [font-family:'Audiowide',Helvetica] text-[#f9582d] text-lg font-medium tracking-wide hover:bg-white hover:scale-105 transition-all duration-300 flex items-center gap-3 shadow-xl"
             >
-              <img className="w-6 h-6" alt="Download icon" src={downloadLogo} />
+              {/* <img className="w-6 h-6" alt="Download icon" src={downloadLogo} /> */}
               Watch Trailer
             </Button>
           </div>
