@@ -7,6 +7,7 @@ const playIcon = new URL("../../Images/Icons/Frame 4.png", import.meta.url).href
 const playButton = new URL("../../Images/Icons/Frame 5.png", import.meta.url).href;
 const trailerThumbnail = new URL("../../Images/Posts/image.png", import.meta.url).href;
 const footerDivider = new URL("../../Images/Footer/Layer_1.png", import.meta.url).href;
+const planeImage = new URL("../../Images/Footer/plane.png", import.meta.url).href;
 import { Button } from "../../components/ui/button";
 
 // Game feature card images with text baked in
@@ -195,34 +196,55 @@ export const LandingPage = (): JSX.Element => {
 
         {/* Call to Action Section */}
         <section className="relative z-10 mt-[100px] md:mt-[150px] lg:mt-[200px] px-4 md:px-8 lg:px-[155px]">
-          <h2 className="text-center [font-family:'Audiowide',Helvetica] font-normal text-white text-3xl md:text-5xl lg:text-[67.1px] mb-8 tracking-wide drop-shadow-2xl">
-            JOIN THE BATTLE
-          </h2>
+          <div className="flex flex-col items-center lg:flex-row lg:items-start lg:justify-between">
+            <div className="flex-1">
+              <h2 className="text-center [font-family:'Audiowide',Helvetica] font-normal text-white text-3xl md:text-5xl lg:text-[67.1px] mb-8 tracking-wide drop-shadow-2xl">
+                JOIN THE BATTLE
+              </h2>
 
-          <p className="w-full max-w-[1037px] mx-auto text-center [font-family:'Montserrat',Helvetica] font-normal text-white text-lg md:text-2xl lg:text-3xl mb-16 leading-relaxed drop-shadow-lg">
-            Available on Web, PC, and more.
-            <br /> Join now and lead your fleet to victory.
-          </p>
+              <p className="w-full max-w-[1037px] mx-auto text-center [font-family:'Montserrat',Helvetica] font-normal text-white text-lg md:text-2xl lg:text-3xl mb-16 leading-relaxed drop-shadow-lg">
+                Available on Web, PC, and more.
+                <br /> Join now and lead your fleet to victory.
+              </p>
 
-          <div className="flex flex-col sm:flex-row justify-center gap-6">
-            <Button className="h-[52px] px-[57px] py-3.5 bg-gradient-to-r from-[#f8572d] to-[#e04d27] rounded-[68px] [font-family:'Audiowide',Helvetica] text-lg font-medium tracking-wide shadow-2xl hover:shadow-[#f8572d]/50 hover:scale-105 transition-all duration-300 flex items-center gap-[21px] border-2 border-[#f8572d]/30">
-              Play Now
-            </Button>
+              <div className="flex flex-col sm:flex-row justify-center gap-6">
+                <Button className="h-[52px] px-[57px] py-3.5 bg-gradient-to-r from-[#f8572d] to-[#e04d27] rounded-[68px] [font-family:'Audiowide',Helvetica] text-lg font-medium tracking-wide shadow-2xl hover:shadow-[#f8572d]/50 hover:scale-105 transition-all duration-300 flex items-center gap-[21px] border-2 border-[#f8572d]/30">
+                  <img
+                    className="w-[33.01px] h-[21.7px] filter drop-shadow-md"
+                    alt="Play icon"
+                    src={playIcon}
+                  />
+                  Play Now
+                </Button>
 
-            <Button
-              variant="outline"
-              className="h-[52px] px-[51px] py-[13px] bg-white/95 backdrop-blur-sm rounded-[68px] [font-family:'Audiowide',Helvetica] text-[#f9582d] text-lg font-medium tracking-wide hover:bg-white hover:scale-105 transition-all duration-300 flex items-center gap-[21px] shadow-xl"
-            >
-              Download
-            </Button>
+                <Button
+                  variant="outline"
+                  className="h-[52px] px-[51px] py-[13px] bg-white/95 backdrop-blur-sm rounded-[68px] [font-family:'Audiowide',Helvetica] text-[#f9582d] text-lg font-medium tracking-wide hover:bg-white hover:scale-105 transition-all duration-300 flex items-center gap-[21px] shadow-xl"
+                >
+                  <img className="w-6 h-6" alt="Download icon" src={downloadLogo} />
+                  Download
+                </Button>
+              </div>
+            </div>
+
+            <img
+              src={planeImage}
+              alt=""
+              className="hidden lg:block w-[860px] h-[600px] object-contain ml-auto -mr-[155px] mt-8 lg:mt-0"
+            />
           </div>
         </section>
       </div>
 
       {/* Footer */}
       <footer className="relative z-10 w-full mt-[100px] md:mt-[150px] lg:mt-[200px]">
-        <img src={footerDivider} alt="" className="w-full" />
-        <div className="w-full h-auto min-h-[290px] bg-gradient-to-b from-[#222222] via-[#111111] to-black flex flex-col items-center justify-center py-12 px-4">
+        <div className="relative w-full">
+          <img
+            src={footerDivider}
+            alt=""
+            className="absolute top-0 left-0 w-full -translate-y-1/2 pointer-events-none"
+          />
+          <div className="w-full h-auto min-h-[290px] bg-gradient-to-b from-[#222222] via-[#111111] to-black flex flex-col items-center justify-center py-12 px-4">
             <div className="flex items-center mb-8 group cursor-pointer transition-all duration-300 hover:scale-105">
               <img src={logoImage} alt="Galaxion logo" />
             </div>
@@ -244,7 +266,8 @@ export const LandingPage = (): JSX.Element => {
               Copyright © 2025 Space Combat All rights reserved.
             </p>
           </div>
-        </footer>
+        </div>
+      </footer>
       </div>
   );
 };
