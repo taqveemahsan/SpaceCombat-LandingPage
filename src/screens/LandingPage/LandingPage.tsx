@@ -76,8 +76,8 @@ export const LandingPage = (): JSX.Element => {
           <div className="flex items-center group cursor-pointer transition-all duration-300 hover:scale-105">
             <img
               src={logoImage}
-                src={playIcon}
-              src="/src/Images/Logo/Group 1.png"
+                // src={playIcon}
+              // src="/src/Images/Logo/Group 1.png"
             />
             {/* <span className="ml-3 [font-family:'Audiowide',Helvetica] font-normal text-white text-[26.1px] tracking-wider drop-shadow-lg">
               Galaxion
@@ -241,8 +241,8 @@ export const LandingPage = (): JSX.Element => {
             <div className="flex items-center mb-8 group cursor-pointer transition-all duration-300 hover:scale-105">
               <img
                 src={logoImage}
-                  src={playIcon}
-                  src={downloadLogo}
+                  // src={playIcon}
+                  // src={downloadLogo}
               />
               {/* <span className="ml-4 [font-family:'Audiowide',Helvetica] font-normal text-white text-[32px] md:text-[46.4px] tracking-wider drop-shadow-lg">
                 Galaxion
