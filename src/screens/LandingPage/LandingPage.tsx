@@ -1,25 +1,59 @@
 import React from "react";
 
-// Hero background image path
-const heroBackground = "/src/Images/Group 11.png";
+const heroBackground = new URL("../../Images/Group 11.png", import.meta.url).href;
+const logoImage = new URL("../../Images/Logo/Group 1.png", import.meta.url).href;
+const downloadLogo = new URL("../../Images/Logo/Group 9.png", import.meta.url).href;
+const playIcon = new URL("../../Images/Icons/Frame 4.png", import.meta.url).href;
+const playButton = new URL("../../Images/Icons/Frame 5.png", import.meta.url).href;
+const trailerThumbnail = new URL("../../Images/Posts/image.png", import.meta.url).href;
 import { Button } from "../../components/ui/button";
 
 // Game feature card images with text baked in
 const gameFeatures = [
-  { background: "/src/Images/Posts/Layer_1.png", alt: "Advanced AI Enemies" },
-  { background: "/src/Images/Posts/Layer_2.png", alt: "Realistic Flight Physics" },
-  { background: "/src/Images/Posts/Layer_3.png", alt: "Vast Environments" },
-  { background: "/src/Images/Posts/Layer_4.png", alt: "Single or Multiplayer Ready" },
+  {
+    background: new URL("../../Images/Posts/Layer_1.png", import.meta.url).href,
+    alt: "Advanced AI Enemies",
+  },
+  {
+    background: new URL("../../Images/Posts/Layer_2.png", import.meta.url).href,
+    alt: "Realistic Flight Physics",
+  },
+  {
+    background: new URL("../../Images/Posts/Layer_3.png", import.meta.url).href,
+    alt: "Vast Environments",
+  },
+  {
+    background: new URL("../../Images/Posts/Layer_4.png", import.meta.url).href,
+    alt: "Single or Multiplayer Ready",
+  },
 ];
 
 // Game screenshots data
 const gameScreenshots = [
-  { src: "/src/Images/Posts/image 2.png", alt: "Game screenshot 1" },
-  { src: "/src/Images/Posts/image 4.png", alt: "Game screenshot 2" },
-  { src: "/src/Images/Posts/image 3.png", alt: "Game screenshot 3" },
-  { src: "/src/Images/Posts/image 7.png", alt: "Game screenshot 4" },
-  { src: "/src/Images/Posts/image 6.png", alt: "Game screenshot 5" },
-  { src: "/src/Images/Posts/image 5.png", alt: "Game screenshot 6" },
+  {
+    src: new URL("../../Images/Posts/image 2.png", import.meta.url).href,
+    alt: "Game screenshot 1",
+  },
+  {
+    src: new URL("../../Images/Posts/image 4.png", import.meta.url).href,
+    alt: "Game screenshot 2",
+  },
+  {
+    src: new URL("../../Images/Posts/image 3.png", import.meta.url).href,
+    alt: "Game screenshot 3",
+  },
+  {
+    src: new URL("../../Images/Posts/image 7.png", import.meta.url).href,
+    alt: "Game screenshot 4",
+  },
+  {
+    src: new URL("../../Images/Posts/image 6.png", import.meta.url).href,
+    alt: "Game screenshot 5",
+  },
+  {
+    src: new URL("../../Images/Posts/image 5.png", import.meta.url).href,
+    alt: "Game screenshot 6",
+  },
 ];
 
 export const LandingPage = (): JSX.Element => {
@@ -41,8 +75,8 @@ export const LandingPage = (): JSX.Element => {
         <header className="relative z-10 flex justify-center pt-8 pb-4">
           <div className="flex items-center group cursor-pointer transition-all duration-300 hover:scale-105">
             <img
-              className="h-[45px] filter drop-shadow-lg"
-              alt="Galaxion logo"
+              src={logoImage}
+                src={playIcon}
               src="/src/Images/Logo/Group 1.png"
             />
             {/* <span className="ml-3 [font-family:'Audiowide',Helvetica] font-normal text-white text-[26.1px] tracking-wider drop-shadow-lg">
@@ -153,14 +187,14 @@ export const LandingPage = (): JSX.Element => {
             <img
               className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105 filter drop-shadow-2xl"
               alt="Game trailer thumbnail"
-              src="/src/Images/Posts/image.png"
+              src={trailerThumbnail}
             />
             <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all duration-300"></div>
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 group-hover:scale-110">
-              <img 
-                className="w-32 h-32 md:w-40 md:h-40 filter drop-shadow-2xl" 
-                alt="Play button" 
-                src="/src/Images/Icons/Frame 5.png" 
+              <img
+                className="w-32 h-32 md:w-40 md:h-40 filter drop-shadow-2xl"
+                alt="Play button"
+                src={playButton}
               />
             </div>
           </div>
@@ -182,7 +216,7 @@ export const LandingPage = (): JSX.Element => {
               <img
                 className="w-[33.01px] h-[21.7px] filter drop-shadow-md"
                 alt="Play icon"
-                src="/src/Images/Icons/Frame 4.png"
+                src={playIcon}
               />
               Play Now
             </Button>
@@ -194,7 +228,7 @@ export const LandingPage = (): JSX.Element => {
               <img
                 className="w-6 h-6"
                 alt="Download icon"
-                src="/src/Images/Logo/Group 9.png"
+                src={downloadLogo}
               />
               Download
             </Button>
@@ -206,9 +240,9 @@ export const LandingPage = (): JSX.Element => {
           <div className="w-full h-auto min-h-[290px] bg-gradient-to-b from-[#222222] via-[#111111] to-black flex flex-col items-center justify-center py-12 px-4">
             <div className="flex items-center mb-8 group cursor-pointer transition-all duration-300 hover:scale-105">
               <img
-                className="h-[75px] filter drop-shadow-lg"
-                alt="Galaxion logo"
-                src="/src/Images/Logo/Group 1.png"
+                src={logoImage}
+                  src={playIcon}
+                  src={downloadLogo}
               />
               {/* <span className="ml-4 [font-family:'Audiowide',Helvetica] font-normal text-white text-[32px] md:text-[46.4px] tracking-wider drop-shadow-lg">
                 Galaxion
