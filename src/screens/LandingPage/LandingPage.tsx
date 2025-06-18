@@ -6,6 +6,7 @@ const downloadLogo = new URL("../../Images/Logo/Group 9.png", import.meta.url).h
 const playIcon = new URL("../../Images/Icons/Frame 4.png", import.meta.url).href;
 const playButton = new URL("../../Images/Icons/Frame 5.png", import.meta.url).href;
 const trailerThumbnail = new URL("../../Images/Posts/image.png", import.meta.url).href;
+const footerDivider = new URL("../../Footer/Layer_1.png", import.meta.url).href;
 import { Button } from "../../components/ui/button";
 
 // Game feature card images with text baked in
@@ -59,10 +60,10 @@ const gameScreenshots = [
 export const LandingPage = (): JSX.Element => {
   return (
     <div className="relative flex flex-col items-center w-full overflow-hidden min-h-screen">
-      {/* Fixed hero background */}
-      <div className="fixed inset-0 -z-10">
+      {/* Page background */}
+      <div className="absolute inset-0 -z-10 h-full">
         <img
-          className="w-full h-full object-contain object-top"
+          className="w-full h-full object-cover object-top"
           alt="Space combat background"
           src={heroBackground}
         />
@@ -78,7 +79,7 @@ export const LandingPage = (): JSX.Element => {
         </header>
 
         {/* Hero Section */}
-        <section className="relative z-10 mt-32 px-4 md:px-8 lg:px-[155px] text-center lg:text-left">
+        <section className="relative z-10 mt-16 px-4 md:px-8 lg:px-[155px] text-center lg:text-left">
           <div className="pointer-events-none absolute inset-0 flex items-center justify-center lg:justify-start">
             <h1 className="max-w-[753px] blur-[8px] [font-family:'Audiowide',Helvetica] text-[#f8572d] text-3xl md:text-5xl lg:text-[67.1px] leading-tight opacity-60">
               UNLEASH CHAOS AMONG THE STARS
@@ -95,25 +96,25 @@ export const LandingPage = (): JSX.Element => {
 
           <div className="flex flex-col sm:flex-row gap-4 mt-12 justify-center lg:justify-start">
             <Button className="h-[52px] px-[42px] py-3.5 bg-gradient-to-r from-[#f8572d] to-[#e04d27] rounded-[68px] [font-family:'Audiowide',Helvetica] text-lg font-medium tracking-wide shadow-2xl hover:shadow-[#f8572d]/50 hover:scale-105 transition-all duration-300 border-2 border-[#f8572d]/30 flex items-center gap-3">
-              <img
+              {/* <img
                 className="w-[33.01px] h-[21.7px] filter drop-shadow-md"
                 alt="Play icon"
                 src={playIcon}
-              />
+              /> */}
               Play Now
             </Button>
             <Button
               variant="outline"
               className="h-[52px] px-[42px] py-3.5 bg-white/95 backdrop-blur-sm rounded-[68px] [font-family:'Audiowide',Helvetica] text-[#f9582d] text-lg font-medium tracking-wide hover:bg-white hover:scale-105 transition-all duration-300 flex items-center gap-3 shadow-xl"
             >
-              <img className="w-6 h-6" alt="Download icon" src={downloadLogo} />
+              {/* <img className="w-6 h-6" alt="Download icon" src={downloadLogo} /> */}
               Watch Trailer
             </Button>
           </div>
         </section>
 
         {/* Game Features Section */}
-        <section className="relative z-10 mt-[200px] md:mt-[300px] lg:mt-[400px] px-4 md:px-8 lg:px-[155px]">
+        <section className="relative z-10 mt-[100px] md:mt-[150px] lg:mt-[200px] px-4 md:px-8 lg:px-[155px]">
           <h2 className="text-center [font-family:'Audiowide',Helvetica] font-normal text-white text-3xl md:text-5xl lg:text-[67.1px] mb-8 tracking-wide drop-shadow-2xl">
             GAME FEATURES
           </h2>
@@ -139,7 +140,7 @@ export const LandingPage = (): JSX.Element => {
         </section>
 
         {/* In-Game Experience Section */}
-        <section className="relative z-10 mt-[200px] md:mt-[300px] lg:mt-[400px] px-4 md:px-8 lg:px-[155px]">
+        <section className="relative z-10 mt-[100px] md:mt-[150px] lg:mt-[200px] px-4 md:px-8 lg:px-[155px]">
           <h2 className="text-center [font-family:'Audiowide',Helvetica] font-normal text-white text-3xl md:text-5xl lg:text-[67.1px] mb-8 tracking-wide drop-shadow-2xl">
             IN-GAME EXPERIENCE
           </h2>
@@ -166,7 +167,7 @@ export const LandingPage = (): JSX.Element => {
         </section>
 
         {/* Trailer Section */}
-        <section className="relative z-10 mt-[200px] md:mt-[300px] lg:mt-[400px] px-4 md:px-8 lg:px-[155px]">
+        <section className="relative z-10 mt-[100px] md:mt-[150px] lg:mt-[200px] px-4 md:px-8 lg:px-[155px]">
           <h2 className="text-center [font-family:'Audiowide',Helvetica] font-normal text-white text-3xl md:text-5xl lg:text-[67.1px] mb-8 tracking-wide drop-shadow-2xl">
             WATCH THE TRAILER
           </h2>
@@ -193,7 +194,7 @@ export const LandingPage = (): JSX.Element => {
         </section>
 
         {/* Call to Action Section */}
-        <section className="relative z-10 mt-[200px] md:mt-[300px] lg:mt-[400px] px-4 md:px-8 lg:px-[155px]">
+        <section className="relative z-10 mt-[100px] md:mt-[150px] lg:mt-[200px] px-4 md:px-8 lg:px-[155px]">
           <h2 className="text-center [font-family:'Audiowide',Helvetica] font-normal text-white text-3xl md:text-5xl lg:text-[67.1px] mb-8 tracking-wide drop-shadow-2xl">
             JOIN THE BATTLE
           </h2>
@@ -222,10 +223,12 @@ export const LandingPage = (): JSX.Element => {
             </Button>
           </div>
         </section>
+      </div>
 
-        {/* Footer */}
-        <footer className="relative z-10 mt-[200px] md:mt-[300px] lg:mt-[400px]">
-          <div className="w-full h-auto min-h-[290px] bg-gradient-to-b from-[#222222] via-[#111111] to-black flex flex-col items-center justify-center py-12 px-4">
+      {/* Footer */}
+      <footer className="relative z-10 w-full mt-[100px] md:mt-[150px] lg:mt-[200px]">
+        <img src={footerDivider} alt="" className="w-full" />
+        <div className="w-full h-auto min-h-[290px] bg-gradient-to-b from-[#222222] via-[#111111] to-black flex flex-col items-center justify-center py-12 px-4">
             <div className="flex items-center mb-8 group cursor-pointer transition-all duration-300 hover:scale-105">
               <img src={logoImage} alt="Galaxion logo" />
             </div>
