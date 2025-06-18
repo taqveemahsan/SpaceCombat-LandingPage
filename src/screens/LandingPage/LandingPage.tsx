@@ -1,28 +1,12 @@
 import React from "react";
 import { Button } from "../../components/ui/button";
 
-// Game feature data for mapping - Updated with layer images
+// Game feature card images with text baked in
 const gameFeatures = [
-  {
-    title: "ADVANCED\nAI ENEMIES",
-    description: "Fight intelligent foes that adapt to your playstyle.",
-    background: "/src/Images/Posts/Layer_1.png",
-  },
-  {
-    title: "Realistic Flight Physics",
-    description: "Control your ship with inertia-based space mechanics.",
-    background: "/src/Images/Posts/Layer_2.png",
-  },
-  {
-    title: "VAST ENVIRONMENTS",
-    description: "From asteroid fields to deep-space stations.",
-    background: "/src/Images/Posts/Layer_3.png",
-  },
-  {
-    title: "SINGLE OR MULTIPLAYER READY",
-    description: "Designed to expand into any mode.",
-    background: "/src/Images/Posts/Layer_4.png",
-  },
+  { background: "/src/Images/Posts/Layer_1.png", alt: "Advanced AI Enemies" },
+  { background: "/src/Images/Posts/Layer_2.png", alt: "Realistic Flight Physics" },
+  { background: "/src/Images/Posts/Layer_3.png", alt: "Vast Environments" },
+  { background: "/src/Images/Posts/Layer_4.png", alt: "Single or Multiplayer Ready" },
 ];
 
 // Game screenshots data
@@ -118,21 +102,10 @@ export const LandingPage = (): JSX.Element => {
                 className="relative w-full max-w-xs aspect-[347/433] group cursor-pointer overflow-hidden rounded-lg"
               >
                 <img
-                  className="absolute inset-0 w-full h-full object-cover rounded-lg filter drop-shadow-xl"
-                  alt={`Feature card background ${index + 1}`}
+                  className="absolute inset-0 w-full h-full object-cover rounded-lg filter drop-shadow-xl transition-transform duration-300 group-hover:scale-105"
+                  alt={feature.alt}
                   src={feature.background}
                 />
-
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-
-                <div className="relative z-10 flex flex-col justify-end h-full p-4">
-                  <h3 className="[font-family:'Audiowide',Helvetica] text-white text-[24px] md:text-[28px] lg:text-[30.7px] tracking-wide drop-shadow-lg whitespace-pre-line text-center">
-                    {feature.title}
-                  </h3>
-                  <p className="mt-2 [font-family:'Montserrat',Helvetica] text-white text-lg text-center leading-relaxed drop-shadow-md">
-                    {feature.description}
-                  </p>
-                </div>
               </div>
             ))}
           </div>
