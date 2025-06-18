@@ -1,77 +1,107 @@
 import React from "react";
+
+const heroBackground = new URL("../../Images/Group 11.png", import.meta.url)
+  .href;
+const logoImage = new URL("../../Images/Logo/Group 1.png", import.meta.url)
+  .href;
+const downloadLogo = new URL("../../Images/Logo/Group 9.png", import.meta.url)
+  .href;
+const playIcon = new URL("../../Images/Icons/Frame 4.png", import.meta.url)
+  .href;
+const playButton = new URL("../../Images/Icons/Frame 5.png", import.meta.url)
+  .href;
+const trailerThumbnail = new URL(
+  "../../Images/Posts/image.png",
+  import.meta.url,
+).href;
 import { Button } from "../../components/ui/button";
 
-// Game feature data for mapping - Updated with layer images
+// Game feature card images with text baked in
 const gameFeatures = [
   {
-    title: "ADVANCED\nAI ENEMIES",
-    description: "Fight intelligent foes that adapt to your playstyle.",
-    background: "/src/Images/Posts/Layer_1.png",
+    background: new URL("../../Images/Posts/Layer_1.png", import.meta.url).href,
+    alt: "Advanced AI Enemies",
   },
   {
-    title: "Realistic Flight Physics",
-    description: "Control your ship with inertia-based space mechanics.",
-    background: "/src/Images/Posts/Layer_2.png",
+    background: new URL("../../Images/Posts/Layer_2.png", import.meta.url).href,
+    alt: "Realistic Flight Physics",
   },
   {
-    title: "VAST ENVIRONMENTS",
-    description: "From asteroid fields to deep-space stations.",
-    background: "/src/Images/Posts/Layer_3.png",
+    background: new URL("../../Images/Posts/Layer_3.png", import.meta.url).href,
+    alt: "Vast Environments",
   },
   {
-    title: "SINGLE OR MULTIPLAYER READY",
-    description: "Designed to expand into any mode.",
-    background: "/src/Images/Posts/Layer_4.png",
+    background: new URL("../../Images/Posts/Layer_4.png", import.meta.url).href,
+    alt: "Single or Multiplayer Ready",
   },
 ];
 
 // Game screenshots data
 const gameScreenshots = [
-  { src: "/src/Images/Posts/image 2.png", alt: "Game screenshot 1" },
-  { src: "/src/Images/Posts/image 4.png", alt: "Game screenshot 2" },
-  { src: "/src/Images/Posts/image 3.png", alt: "Game screenshot 3" },
-  { src: "/src/Images/Posts/image 7.png", alt: "Game screenshot 4" },
-  { src: "/src/Images/Posts/image 6.png", alt: "Game screenshot 5" },
-  { src: "/src/Images/Posts/image 5.png", alt: "Game screenshot 6" },
+  {
+    src: new URL("../../Images/Posts/image 2.png", import.meta.url).href,
+    alt: "Game screenshot 1",
+  },
+  {
+    src: new URL("../../Images/Posts/image 4.png", import.meta.url).href,
+    alt: "Game screenshot 2",
+  },
+  {
+    src: new URL("../../Images/Posts/image 3.png", import.meta.url).href,
+    alt: "Game screenshot 3",
+  },
+  {
+    src: new URL("../../Images/Posts/image 7.png", import.meta.url).href,
+    alt: "Game screenshot 4",
+  },
+  {
+    src: new URL("../../Images/Posts/image 6.png", import.meta.url).href,
+    alt: "Game screenshot 5",
+  },
+  {
+    src: new URL("../../Images/Posts/image 5.png", import.meta.url).href,
+    alt: "Game screenshot 6",
+  },
 ];
 
 export const LandingPage = (): JSX.Element => {
   return (
-    <div className="bg-black flex flex-col items-center w-full overflow-hidden min-h-screen">
-      <div className="relative w-full max-w-[1920px]">
-        {/* Main Background - Group 11.png - NO SCALING */}
-        <div className="fixed inset-0 z-0">
-          <img
-            className="h-full w-full object-cover object-center"
-            alt="Space combat background"
-            src="/src/Images/Group 11.png"
-            style={{ objectFit: 'cover', objectPosition: 'center' }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40"></div>
-        </div>
+    <div className="relative flex flex-col items-center w-full overflow-hidden min-h-screen">
+      {/* Fixed hero background */}
+      <div className="fixed inset-0 -z-10">
+        <img
+          className="w-full h-full object-contain object-top"
+          alt="Space combat hero background"
+          src={heroBackground}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40"></div>
+      </div>
 
+      <div className="relative w-full max-w-screen-2xl mx-auto">
         {/* Navigation with improved styling */}
         <header className="relative z-10 flex justify-center pt-8 pb-4">
           <div className="flex items-center group cursor-pointer transition-all duration-300 hover:scale-105">
             <img
-              className="w-[35px] h-[45px] filter drop-shadow-lg"
-              alt="Galaxion logo"
-              src="/src/Images/Logo/Group 1.png"
+              alt="Galaxion Logo"
+                // src={playIcon}
+              // src="/src/Images/Logo/Group 1.png"
             />
-            <span className="ml-3 [font-family:'Audiowide',Helvetica] font-normal text-white text-[26.1px] tracking-wider drop-shadow-lg">
+            {/* <span className="ml-3 [font-family:'Audiowide',Helvetica] font-normal text-white text-[26.1px] tracking-wider drop-shadow-lg">
               Galaxion
-            </span>
+            </span> */}
           </div>
         </header>
 
         {/* Hero Section with enhanced visual effects */}
-        <section className="relative z-10 mt-32 px-4 md:px-8 lg:px-[155px]">
-          {/* Enhanced blurred text effect */}
-          <div className="absolute w-full max-w-[753px] top-[323px] left-1/2 transform -translate-x-1/2 lg:left-[155px] lg:transform-none blur-[8px] [font-family:'Audiowide',Helvetica] font-normal text-[#f8572d] text-3xl md:text-5xl lg:text-[67.1px] leading-tight opacity-60">
-            UNLEASH CHAOS AMONG THE STARS
+        <section className="relative z-10 mt-32 px-4 md:px-8 lg:px-[155px] text-center lg:text-left">
+          {/* Blurred duplicate text behind the main heading */}
+          <div className="pointer-events-none absolute inset-0 flex items-center justify-center lg:justify-start">
+            <h1 className="max-w-[753px] blur-[8px] [font-family:'Audiowide',Helvetica] text-[#f8572d] text-3xl md:text-5xl lg:text-[67.1px] leading-tight opacity-60">
+              UNLEASH CHAOS AMONG THE STARS
+            </h1>
           </div>
 
-          <h1 className="relative w-full max-w-[753px] mx-auto lg:mx-0 [font-family:'Audiowide',Helvetica] font-normal text-white text-3xl md:text-5xl lg:text-[67.1px] leading-tight tracking-wide drop-shadow-2xl">
+          <h1 className="relative max-w-[753px] mx-auto lg:mx-0 [font-family:'Audiowide',Helvetica] font-normal text-white text-3xl md:text-5xl lg:text-[67.1px] leading-tight tracking-wide drop-shadow-2xl">
             UNLEASH CHAOS AMONG THE STARS
           </h1>
 
@@ -85,14 +115,14 @@ export const LandingPage = (): JSX.Element => {
               <img
                 className="w-[33.01px] h-[21.7px] filter drop-shadow-md"
                 alt="Play icon"
-                src="/src/Images/Icons/Frame 4.png"
-              />
-              Play Now
-            </Button>
+        <section className="relative z-10 mt-20 md:mt-32 lg:mt-48 px-4 md:px-8 lg:px-[155px]">
+        <section className="relative z-10 mt-20 md:mt-32 lg:mt-48 px-4 md:px-8 lg:px-[155px]">
+        <section className="relative z-10 mt-20 md:mt-32 lg:mt-48 px-4 md:px-8 lg:px-[155px]">
+        <section className="relative z-10 mt-20 md:mt-32 lg:mt-48 px-4 md:px-8 lg:px-[155px]">
 
             <Button
               variant="outline"
-              className="h-[52px] px-[23px] py-3.5 rounded-[68px] border-2 border-[#f8572d] bg-transparent backdrop-blur-sm [font-family:'Audiowide',Helvetica] text-[#f8572d] text-lg font-medium tracking-wide hover:bg-[#f8572d]/20 hover:scale-105 transition-all duration-300 shadow-lg"
+        <footer className="relative z-10 mt-20 md:mt-32 lg:mt-48">
             >
               Watch Trailer
             </Button>
@@ -112,31 +142,25 @@ export const LandingPage = (): JSX.Element => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4 justify-items-center">
             {gameFeatures.map((feature, index) => (
-              <div key={index} className="relative w-[351px] h-[433px] group cursor-pointer">
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20 rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl"></div>
-                
+              <div
+                key={index}
+                className="relative w-full max-w-xs aspect-[347/433] group cursor-pointer overflow-hidden rounded-lg"
+              >
                 <img
-                  className="absolute w-[347px] h-[433px] top-0 left-0 rounded-lg filter drop-shadow-xl object-cover"
-                  alt={`Feature card background ${index + 1}`}
+                  className="absolute inset-0 w-full h-full object-cover rounded-lg filter drop-shadow-xl transition-transform duration-300 group-hover:scale-105"
+                  alt={feature.alt}
                   src={feature.background}
                 />
-
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-lg"></div>
-
-                <h3 className="absolute w-full top-[280px] left-0 text-center [font-family:'Audiowide',Helvetica] font-normal text-white text-[24px] md:text-[28px] lg:text-[30.7px] tracking-wide drop-shadow-lg whitespace-pre-line px-4">
-                  {feature.title}
-                </h3>
-
-                <p className="absolute w-full top-[340px] left-0 [font-family:'Montserrat',Helvetica] font-normal text-white text-lg text-center leading-relaxed drop-shadow-md px-4">
-                  {feature.description}
-                </p>
               </div>
             ))}
           </div>
         </section>
 
         {/* In-Game Experience Section with improved grid */}
-        <section className="relative z-10 mt-[200px] md:mt-[300px] lg:mt-[400px] px-4 md:px-8 lg:px-[155px]">
+              <div
+                key={index}
+                className="group cursor-pointer overflow-hidden rounded-lg"
+              >
           <h2 className="text-center [font-family:'Audiowide',Helvetica] font-normal text-white text-3xl md:text-5xl lg:text-[67.1px] mb-8 tracking-wide drop-shadow-2xl">
             IN-GAME EXPERIENCE
           </h2>
@@ -149,7 +173,7 @@ export const LandingPage = (): JSX.Element => {
             {gameScreenshots.map((screenshot, index) => (
               <div key={index} className="group cursor-pointer overflow-hidden rounded-lg">
                 <img
-                  className="w-full h-[200px] md:h-[250px] lg:h-[308px] object-cover transition-all duration-500 group-hover:scale-110 filter drop-shadow-xl"
+                  className="w-full aspect-video object-cover transition-all duration-500 group-hover:scale-110 filter drop-shadow-xl"
                   alt={screenshot.alt}
                   src={screenshot.src}
                 />
@@ -169,29 +193,25 @@ export const LandingPage = (): JSX.Element => {
             Experience the thrill before you take control.
           </p>
 
-          <div className="relative mx-auto w-full max-w-[1314px] h-[300px] md:h-[500px] lg:h-[739px] group cursor-pointer overflow-hidden rounded-xl">
+          <div className="relative mx-auto w-full max-w-[1314px] aspect-video group cursor-pointer overflow-hidden rounded-xl">
             <img
               className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105 filter drop-shadow-2xl"
               alt="Game trailer thumbnail"
-              src="/src/Images/Posts/image.png"
+              src={trailerThumbnail}
             />
             <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all duration-300"></div>
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 group-hover:scale-110">
-              <img 
-                className="w-32 h-32 md:w-40 md:h-40 filter drop-shadow-2xl" 
-                alt="Play button" 
-                src="/src/Images/Icons/Frame 5.png" 
+              <img
+                className="w-32 h-32 md:w-40 md:h-40 filter drop-shadow-2xl"
+                alt="Play button"
+                src={playButton}
               />
             </div>
           </div>
         </section>
 
         {/* Call to Action Section with improved buttons */}
-        <section className="relative z-10 mt-[200px] md:mt-[300px] lg:mt-[400px] px-4 md:px-8 lg:px-[155px]">
-          <h2 className="text-center [font-family:'Audiowide',Helvetica] font-normal text-white text-3xl md:text-5xl lg:text-[67.1px] mb-8 tracking-wide drop-shadow-2xl">
-            READY TO TAKE FLIGHT?
-          </h2>
-
+              <img className="w-6 h-6" alt="Download icon" src={downloadLogo} />
           <p className="w-full max-w-[1037px] mx-auto text-center [font-family:'Montserrat',Helvetica] font-normal text-white text-lg md:text-2xl lg:text-3xl mb-16 leading-relaxed drop-shadow-lg">
             Available on Web, PC, and more.
             <br /> Join now and lead your fleet to victory.
@@ -202,7 +222,7 @@ export const LandingPage = (): JSX.Element => {
               <img
                 className="w-[33.01px] h-[21.7px] filter drop-shadow-md"
                 alt="Play icon"
-                src="/src/Images/Icons/Frame 4.png"
+                src={playIcon}
               />
               Play Now
             </Button>
@@ -212,9 +232,9 @@ export const LandingPage = (): JSX.Element => {
               className="h-[52px] px-[51px] py-[13px] bg-white/95 backdrop-blur-sm rounded-[68px] [font-family:'Audiowide',Helvetica] text-[#f9582d] text-lg font-medium tracking-wide hover:bg-white hover:scale-105 transition-all duration-300 flex items-center gap-[21px] shadow-xl"
             >
               <img
-                className="w-6 h-6"
+                alt="Galaxion Logo"
                 alt="Download icon"
-                src="/src/Images/Logo/Group 9.png"
+                src={downloadLogo}
               />
               Download
             </Button>
@@ -226,13 +246,13 @@ export const LandingPage = (): JSX.Element => {
           <div className="w-full h-auto min-h-[290px] bg-gradient-to-b from-[#222222] via-[#111111] to-black flex flex-col items-center justify-center py-12 px-4">
             <div className="flex items-center mb-8 group cursor-pointer transition-all duration-300 hover:scale-105">
               <img
-                className="w-[63px] h-[81px] filter drop-shadow-lg"
-                alt="Galaxion logo"
-                src="/src/Images/Logo/Group 1.png"
+                src={logoImage}
+                  // src={playIcon}
+                  // src={downloadLogo}
               />
-              <span className="ml-4 [font-family:'Audiowide',Helvetica] font-normal text-white text-[32px] md:text-[46.4px] tracking-wider drop-shadow-lg">
+              {/* <span className="ml-4 [font-family:'Audiowide',Helvetica] font-normal text-white text-[32px] md:text-[46.4px] tracking-wider drop-shadow-lg">
                 Galaxion
-              </span>
+              </span> */}
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
