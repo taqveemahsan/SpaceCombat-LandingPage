@@ -251,11 +251,6 @@ export const LandingPage = (): JSX.Element => {
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Button className="h-[52px] px-[57px] py-3.5 bg-gradient-to-r from-[#f8572d] to-[#e04d27] rounded-[68px] [font-family:'Audiowide',Helvetica] text-lg font-medium tracking-wide shadow-2xl hover:shadow-[#f8572d]/50 hover:scale-105 transition-all duration-300 flex items-center gap-[21px] border-2 border-[#f8572d]/30">
-                <img
-                  className="w-[33.01px] h-[21.7px] filter drop-shadow-md"
-                  alt="Play icon"
-                  src={playIcon}
-                />
                 Play Now
               </Button>
 
@@ -263,7 +258,6 @@ export const LandingPage = (): JSX.Element => {
                 variant="outline"
                 className="h-[52px] px-[51px] py-[13px] bg-white/95 backdrop-blur-sm rounded-[68px] [font-family:'Audiowide',Helvetica] text-[#f9582d] text-lg font-medium tracking-wide hover:bg-white hover:scale-105 transition-all duration-300 flex items-center gap-[21px] shadow-xl"
               >
-                <img className="w-6 h-6" alt="Download icon" src={downloadLogo} />
                 Download
               </Button>
             </div>
