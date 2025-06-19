@@ -124,6 +124,12 @@ export const LandingPage = (): JSX.Element => {
             </Button>
             <Button
               variant="outline"
+              onClick={() =>
+                document
+                  .getElementById('trailer-section')?.scrollIntoView({
+                    behavior: 'smooth',
+                  })
+              }
               className="h-[52px] px-[42px] py-3.5 bg-white/95 backdrop-blur-sm rounded-[68px] [font-family:'Audiowide',Helvetica] text-[#f9582d] text-lg font-medium tracking-wide hover:bg-white hover:scale-105 transition-all duration-300 flex items-center gap-3 shadow-xl"
             >
               {/* <img className="w-6 h-6" alt="Download icon" src={downloadLogo} /> */}
@@ -133,7 +139,10 @@ export const LandingPage = (): JSX.Element => {
         </section>
 
         {/* Game Features Section */}
-        <section className="relative z-10 mt-[100px] md:mt-[150px] lg:mt-[200px] px-4 md:px-8 lg:px-[155px]">
+        <section
+          id="trailer-section"
+          className="relative z-10 mt-[100px] md:mt-[150px] lg:mt-[200px] px-4 md:px-8 lg:px-[155px]"
+        >
           <h2 className="text-center [font-family:'Audiowide',Helvetica] font-normal text-white text-3xl md:text-5xl lg:text-[67.1px] mb-8 tracking-wide drop-shadow-2xl">
             GAME FEATURES
           </h2>
@@ -249,7 +258,7 @@ export const LandingPage = (): JSX.Element => {
                   variant="outline"
                   className="h-[52px] px-[51px] py-[13px] bg-white/95 backdrop-blur-sm rounded-[68px] [font-family:'Audiowide',Helvetica] text-[#f9582d] text-lg font-medium tracking-wide hover:bg-white hover:scale-105 transition-all duration-300 flex items-center gap-[21px] shadow-xl"
                 >
-                  Download
+                  Buy Token
                 </Button>
               </div>
             </div>
@@ -289,7 +298,7 @@ export const LandingPage = (): JSX.Element => {
                 variant="outline"
                 className="h-[52px] px-[51px] py-[13px] bg-white/95 backdrop-blur-sm rounded-[68px] [font-family:'Audiowide',Helvetica] text-[#f9582d] text-lg font-medium tracking-wide hover:bg-white hover:scale-105 transition-all duration-300 flex items-center gap-[21px] shadow-xl"
               >
-                Download
+                Buy Token
               </Button>
             </div>
 
