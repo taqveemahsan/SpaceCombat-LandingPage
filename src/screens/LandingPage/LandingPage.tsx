@@ -140,7 +140,6 @@ export const LandingPage = (): JSX.Element => {
 
         {/* Game Features Section */}
         <section
-          id="trailer-section"
           className="relative z-10 mt-[100px] md:mt-[150px] lg:mt-[200px] px-4 md:px-8 lg:px-[155px]"
         >
           <h2 className="text-center [font-family:'Audiowide',Helvetica] font-normal text-white text-3xl md:text-5xl lg:text-[67.1px] mb-8 tracking-wide drop-shadow-2xl">
@@ -195,7 +194,9 @@ export const LandingPage = (): JSX.Element => {
         </section>
 
         {/* Trailer Section */}
-        <section className="relative z-10 mt-[100px] md:mt-[150px] lg:mt-[200px] px-4 md:px-8 lg:px-[155px]">
+        <section
+        id="trailer-section"
+        className="relative z-10 mt-[100px] md:mt-[150px] lg:mt-[200px] px-4 md:px-8 lg:px-[155px]">
           <h2 className="text-center [font-family:'Audiowide',Helvetica] font-normal text-white text-3xl md:text-5xl lg:text-[67.1px] mb-8 tracking-wide drop-shadow-2xl">
             WATCH THE TRAILER
           </h2>
