@@ -9,6 +9,7 @@ const trailerThumbnail = new URL("../../Images/Posts/image.png", import.meta.url
 const footerDivider = new URL("../../Images/Footer/Layer_1.png", import.meta.url).href;
 const planeImage = new URL("../../Images/Footer/plane.png", import.meta.url).href;
 import { Button } from "../../components/ui/button";
+import { Twitter, BookOpen } from "lucide-react";
 
 // Game feature card images with text baked in
 const gameFeatures = [
@@ -73,10 +74,23 @@ export const LandingPage = (): JSX.Element => {
 
       <div className="relative w-full max-w-screen-2xl mx-auto">
         {/* Navigation */}
-        <header className="relative z-10 flex justify-center pt-8 pb-4">
+        <header className="relative z-10 flex items-center justify-between pt-8 pb-4 px-4 md:px-8">
           <div className="flex items-center group cursor-pointer transition-all duration-300 hover:scale-105">
             <img src={logoImage} alt="Galaxion logo" />
           </div>
+          <Button
+            asChild
+            variant="outline"
+            className="h-10 px-5 bg-white/90 backdrop-blur-sm rounded-[68px] [font-family:'Audiowide',Helvetica] text-[#f9582d] text-sm md:text-base font-medium tracking-wide hover:bg-white hover:scale-105 transition-all duration-300 shadow-xl"
+          >
+            <a
+              href="https://galaxion-fun.gitbook.io/galaxion.fun"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Gitbook
+            </a>
+          </Button>
         </header>
 
         {/* Hero Section */}
@@ -96,13 +110,17 @@ export const LandingPage = (): JSX.Element => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-12 justify-center lg:justify-start">
-            <Button className="h-[52px] px-[42px] py-3.5 bg-gradient-to-r from-[#f8572d] to-[#e04d27] rounded-[68px] [font-family:'Audiowide',Helvetica] text-lg font-medium tracking-wide shadow-2xl hover:shadow-[#f8572d]/50 hover:scale-105 transition-all duration-300 border-2 border-[#f8572d]/30 flex items-center gap-3">
-              {/* <img
-                className="w-[33.01px] h-[21.7px] filter drop-shadow-md"
-                alt="Play icon"
-                src={playIcon}
-              /> */}
-              Play Now
+            <Button
+              asChild
+              className="h-[52px] px-[42px] py-3.5 bg-gradient-to-r from-[#f8572d] to-[#e04d27] rounded-[68px] [font-family:'Audiowide',Helvetica] text-lg font-medium tracking-wide shadow-2xl hover:shadow-[#f8572d]/50 hover:scale-105 transition-all duration-300 border-2 border-[#f8572d]/30 flex items-center gap-3"
+            >
+              <a
+                href="https://app.galaxion.fun/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Play Now
+              </a>
             </Button>
             <Button
               variant="outline"
@@ -214,8 +232,17 @@ export const LandingPage = (): JSX.Element => {
               </p>
 
               <div className="flex flex-col sm:flex-row justify-center gap-6">
-                <Button className="h-[52px] px-[57px] py-3.5 bg-gradient-to-r from-[#f8572d] to-[#e04d27] rounded-[68px] [font-family:'Audiowide',Helvetica] text-lg font-medium tracking-wide shadow-2xl hover:shadow-[#f8572d]/50 hover:scale-105 transition-all duration-300 flex items-center gap-[21px] border-2 border-[#f8572d]/30">
-                  Play Now
+                <Button
+                  asChild
+                  className="h-[52px] px-[57px] py-3.5 bg-gradient-to-r from-[#f8572d] to-[#e04d27] rounded-[68px] [font-family:'Audiowide',Helvetica] text-lg font-medium tracking-wide shadow-2xl hover:shadow-[#f8572d]/50 hover:scale-105 transition-all duration-300 flex items-center gap-[21px] border-2 border-[#f8572d]/30"
+                >
+                  <a
+                    href="https://app.galaxion.fun/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Play Now
+                  </a>
                 </Button>
 
                 <Button
@@ -245,8 +272,17 @@ export const LandingPage = (): JSX.Element => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <Button className="h-[52px] px-[57px] py-3.5 bg-gradient-to-r from-[#f8572d] to-[#e04d27] rounded-[68px] [font-family:'Audiowide',Helvetica] text-lg font-medium tracking-wide shadow-2xl hover:shadow-[#f8572d]/50 hover:scale-105 transition-all duration-300 flex items-center gap-[21px] border-2 border-[#f8572d]/30">
-                Play Now
+              <Button
+                asChild
+                className="h-[52px] px-[57px] py-3.5 bg-gradient-to-r from-[#f8572d] to-[#e04d27] rounded-[68px] [font-family:'Audiowide',Helvetica] text-lg font-medium tracking-wide shadow-2xl hover:shadow-[#f8572d]/50 hover:scale-105 transition-all duration-300 flex items-center gap-[21px] border-2 border-[#f8572d]/30"
+              >
+                <a
+                  href="https://app.galaxion.fun/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Play Now
+                </a>
               </Button>
 
               <Button
@@ -255,6 +291,25 @@ export const LandingPage = (): JSX.Element => {
               >
                 Download
               </Button>
+            </div>
+
+            <div className="flex gap-6 mb-8">
+              <a
+                href="https://x.com/Galaxiondotfun"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-[#f8572d]"
+              >
+                <Twitter className="w-6 h-6" />
+              </a>
+              <a
+                href="https://galaxion-fun.gitbook.io/galaxion.fun"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-[#f8572d]"
+              >
+                <BookOpen className="w-6 h-6" />
+              </a>
             </div>
 
             <p className="[font-family:'Montserrat',Helvetica] font-normal text-white/80 text-sm text-center leading-relaxed">
